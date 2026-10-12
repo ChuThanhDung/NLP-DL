@@ -1,0 +1,16 @@
+experiment,representation,classifier,split,feature_dim,train_time_s,accuracy,precision,recall,f1
+baseline,TF-IDF (unigram),LogisticRegression,val,40790,3.128,0.8906,0.8824,0.9018,0.892
+baseline,TF-IDF (unigram),LogisticRegression,test,40790,3.128,0.8814,0.8842,0.8778,0.881
+representation,Avg Word2Vec,LogisticRegression,val,100,51.911,0.8416,0.8353,0.8517,0.8434
+representation,Avg Word2Vec,LogisticRegression,test,100,51.911,0.8426,0.8435,0.8413,0.8424
+representation,TF-IDF (unigram),LinearSVC,val,40790,2.218,0.8916,0.8811,0.9058,0.8933
+representation,TF-IDF (unigram),LinearSVC,test,40790,2.218,0.8886,0.8862,0.8917,0.8889
+vocab_size,TF-IDF max_features=1000,LogisticRegression,val,1000,2.436,0.8595,0.8513,0.8717,0.8614
+vocab_size,TF-IDF max_features=5000,LogisticRegression,val,5000,2.757,0.8753,0.8698,0.8834,0.8765
+vocab_size,TF-IDF max_features=20000,LogisticRegression,val,20000,2.979,0.8878,0.8787,0.9002,0.8893
+vocab_size,TF-IDF max_features=None,LogisticRegression,val,40790,2.931,0.8906,0.8824,0.9018,0.892
+stopwords,TF-IDF stopwords removed,LogisticRegression,val,40482,2.362,0.8822,0.8715,0.897,0.8841
+ngram,TF-IDF Unigram,LogisticRegression,test,40790,3.128,0.8814,0.8842,0.8778,0.881
+ngram,TF-IDF Unigram,LogisticRegression,val,40790,3.128,0.8906,0.8824,0.9018,0.892
+ngram,TF-IDF Uni + Bigram,LogisticRegression,test,364040,9.316,0.9022,0.9019,0.9027,0.9023
+ngram,TF-IDF Uni + Bigram,LogisticRegression,val,364040,9.316,0.9028,0.8942,0.9142,0.9041
