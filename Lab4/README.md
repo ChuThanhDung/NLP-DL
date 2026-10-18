@@ -46,7 +46,7 @@ Các phát hiện chính:
 
 ```bash
 pip install scikit-learn gensim datasets pandas matplotlib seaborn nbformat nbconvert ipykernel
-cd lab04
+cd lab4
 jupyter nbconvert --to notebook --execute --inplace experiment.ipynb   # ~2-3 phút, cần internet để tải IMDb
 ```
 

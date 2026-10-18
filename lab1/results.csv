@@ -1,0 +1,46 @@
+pipeline,query_id,query,n_relevant,P@5,R@5,RR,first_rel_rank
+A0,Q1,medical image classification,13.0,0.2,0.0769,0.2,5.0
+A0,Q2,transformer language model,24.0,0.2,0.0417,1.0,1.0
+A0,Q3,deep learning healthcare,22.0,0.6,0.1364,0.5,2.0
+A0,Q4,natural language processing,21.0,0.8,0.1905,1.0,1.0
+A0,Q5,fake news detection,19.0,1.0,0.2632,1.0,1.0
+A0,Q6,self-driving car,23.0,0.4,0.087,0.3333,3.0
+A0,Q7,heart attack prediction,9.0,0.0,0.0,0.0244,41.0
+A0,Q8,speech emotion recognition,19.0,0.6,0.1579,1.0,1.0
+A,Q1,medical image classification,13.0,0.2,0.0769,0.2,5.0
+A,Q2,transformer language model,24.0,0.8,0.1667,1.0,1.0
+A,Q3,deep learning healthcare,22.0,0.8,0.1818,0.5,2.0
+A,Q4,natural language processing,21.0,1.0,0.2381,1.0,1.0
+A,Q5,fake news detection,19.0,1.0,0.2632,1.0,1.0
+A,Q6,self-driving car,23.0,0.4,0.087,0.25,4.0
+A,Q7,heart attack prediction,9.0,0.0,0.0,0.1429,7.0
+A,Q8,speech emotion recognition,19.0,0.8,0.2105,1.0,1.0
+B-sw,Q1,medical image classification,13.0,0.2,0.0769,0.25,4.0
+B-sw,Q2,transformer language model,24.0,0.8,0.1667,1.0,1.0
+B-sw,Q3,deep learning healthcare,22.0,0.4,0.0909,0.3333,3.0
+B-sw,Q4,natural language processing,21.0,0.4,0.0952,1.0,1.0
+B-sw,Q5,fake news detection,19.0,1.0,0.2632,1.0,1.0
+B-sw,Q6,self-driving car,23.0,0.4,0.087,1.0,1.0
+B-sw,Q7,heart attack prediction,9.0,0.0,0.0,0.0588,17.0
+B-sw,Q8,speech emotion recognition,19.0,1.0,0.2632,1.0,1.0
+B,Q1,medical image classification,13.0,0.2,0.0769,0.25,4.0
+B,Q2,transformer language model,24.0,0.8,0.1667,1.0,1.0
+B,Q3,deep learning healthcare,22.0,0.4,0.0909,0.3333,3.0
+B,Q4,natural language processing,21.0,0.4,0.0952,1.0,1.0
+B,Q5,fake news detection,19.0,1.0,0.2632,1.0,1.0
+B,Q6,self-driving car,23.0,0.4,0.087,0.5,2.0
+B,Q7,heart attack prediction,9.0,0.0,0.0,0.0556,18.0
+B,Q8,speech emotion recognition,19.0,1.0,0.2632,1.0,1.0
+C,Q1,medical image classification,13.0,0.4,0.1538,0.3333,3.0
+C,Q2,transformer language model,24.0,0.6,0.125,1.0,1.0
+C,Q3,deep learning healthcare,22.0,0.4,0.0909,0.25,4.0
+C,Q4,natural language processing,21.0,0.4,0.0952,1.0,1.0
+C,Q5,fake news detection,19.0,1.0,0.2632,1.0,1.0
+C,Q6,self-driving car,23.0,0.6,0.1304,1.0,1.0
+C,Q7,heart attack prediction,9.0,0.0,0.0,0.1,10.0
+C,Q8,speech emotion recognition,19.0,1.0,0.2632,1.0,1.0
+A,MEAN,(mean over 8 queries),,0.625,0.153,0.6366,
+A0,MEAN,(mean over 8 queries),,0.475,0.1192,0.6322,
+B,MEAN,(mean over 8 queries),,0.525,0.1304,0.6424,
+B-sw,MEAN,(mean over 8 queries),,0.525,0.1304,0.7053,
+C,MEAN,(mean over 8 queries),,0.55,0.1402,0.7104,
