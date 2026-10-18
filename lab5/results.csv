@@ -1,0 +1,10 @@
+model,representation,max_length,params,epochs,best epoch,train time (s),accuracy,precision,recall,f1,truncation,time / epoch (s),peak GPU mem (MB),best val loss
+Logistic Regression,TF-IDF (unigram),full,40791,-,-,7.1463,0.8882,0.8881,0.8885,0.8883,,,,
+Logistic Regression (200 tokens đầu),TF-IDF (unigram),200,34395,-,-,5.781,0.8621,0.8634,0.8603,0.8619,,,,
+RNN,Embedding (train từ đầu),200,2529769,6,6,37.3231,0.7408,0.7274,0.7702,0.7482,head,6.2205,229.1938,0.5792
+LSTM,Embedding (train từ đầu),200,2618089,6,4,42.308,0.8156,0.8291,0.795,0.8117,head,7.0513,373.9956,0.4309
+GRU,Embedding (train từ đầu),200,2588649,6,3,40.3797,0.8322,0.8756,0.7743,0.8219,head,6.73,351.1724,0.3822
+LSTM len 50,Embedding (train từ đầu),50,2618089,6,4,17.5315,0.7457,0.7347,0.7691,0.7515,head,2.9219,220.0962,0.5123
+LSTM len 100,Embedding (train từ đầu),100,2618089,6,5,25.5582,0.7901,0.8035,0.7679,0.7853,head,4.2597,318.5342,0.4586
+LSTM len 400,Embedding (train từ đầu),400,2618089,6,4,69.9353,0.8492,0.8605,0.8335,0.8468,head,11.6559,568.3882,0.3735
+LSTM len 100 (tail),Embedding (train từ đầu),100,2618089,6,3,24.7221,0.8288,0.8333,0.822,0.8276,tail,4.1203,358.4854,0.386
