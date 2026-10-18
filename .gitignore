@@ -1,2 +1,5 @@
 # File đề bài
 W*.pdf
+
+# Script ghép report (chỉ dùng trên máy)
+build_report.py
