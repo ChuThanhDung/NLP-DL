@@ -1,0 +1,99 @@
+experiment,model,split,metric,value
+perplexity,Unigram Laplace,train,PPL,910.6756174180925
+perplexity,Unigram Laplace,train,% tokens P=0,0.0
+perplexity,Unigram Laplace,validation,PPL,833.5161506952104
+perplexity,Unigram Laplace,validation,% tokens P=0,0.0
+perplexity,Unigram Laplace,test,PPL,830.4093501227676
+perplexity,Unigram Laplace,test,% tokens P=0,0.0
+perplexity,Unigram MLE,train,PPL,909.7951470623402
+perplexity,Unigram MLE,train,% tokens P=0,0.0
+perplexity,Unigram MLE,validation,PPL,830.7665262409992
+perplexity,Unigram MLE,validation,% tokens P=0,0.0
+perplexity,Unigram MLE,test,PPL,827.6933108403023
+perplexity,Unigram MLE,test,% tokens P=0,0.0
+perplexity,Bigram Add-k,train,PPL,110.3280968019188
+perplexity,Bigram Add-k,train,% tokens P=0,0.0
+perplexity,Bigram Add-k,validation,PPL,297.57905216419596
+perplexity,Bigram Add-k,validation,% tokens P=0,0.0
+perplexity,Bigram Add-k,test,PPL,290.53467231841205
+perplexity,Bigram Add-k,test,% tokens P=0,0.0
+perplexity,Bigram Interpolation,train,PPL,99.44392435532359
+perplexity,Bigram Interpolation,train,% tokens P=0,0.0
+perplexity,Bigram Interpolation,validation,PPL,226.0097544245338
+perplexity,Bigram Interpolation,validation,% tokens P=0,0.0
+perplexity,Bigram Interpolation,test,PPL,221.06418898020593
+perplexity,Bigram Interpolation,test,% tokens P=0,0.0
+perplexity,Bigram Laplace,train,PPL,1073.3381998057912
+perplexity,Bigram Laplace,train,% tokens P=0,0.0
+perplexity,Bigram Laplace,validation,PPL,1207.8042622768562
+perplexity,Bigram Laplace,validation,% tokens P=0,0.0
+perplexity,Bigram Laplace,test,PPL,1187.6119195367826
+perplexity,Bigram Laplace,test,% tokens P=0,0.0
+perplexity,Bigram MLE,train,PPL,86.25150718199167
+perplexity,Bigram MLE,train,% tokens P=0,0.0
+perplexity,Bigram MLE,validation,PPL,inf
+perplexity,Bigram MLE,validation,% tokens P=0,0.15658503311296398
+perplexity,Bigram MLE,test,PPL,inf
+perplexity,Bigram MLE,test,% tokens P=0,0.15474637546122022
+perplexity,Trigram Add-k,train,PPL,35.96899342847221
+perplexity,Trigram Add-k,train,% tokens P=0,0.0
+perplexity,Trigram Add-k,validation,PPL,1334.4063438242683
+perplexity,Trigram Add-k,validation,% tokens P=0,0.0
+perplexity,Trigram Add-k,test,PPL,1307.1220696288854
+perplexity,Trigram Add-k,test,% tokens P=0,0.0
+perplexity,Trigram Interpolation,train,PPL,23.074127241178036
+perplexity,Trigram Interpolation,train,% tokens P=0,0.0
+perplexity,Trigram Interpolation,validation,PPL,191.37058306476652
+perplexity,Trigram Interpolation,validation,% tokens P=0,0.0
+perplexity,Trigram Interpolation,test,PPL,187.2928016786016
+perplexity,Trigram Interpolation,test,% tokens P=0,0.0
+perplexity,Trigram Laplace,train,PPL,4759.934114280545
+perplexity,Trigram Laplace,train,% tokens P=0,0.0
+perplexity,Trigram Laplace,validation,PPL,7186.262418882225
+perplexity,Trigram Laplace,validation,% tokens P=0,0.0
+perplexity,Trigram Laplace,test,PPL,7069.605454674688
+perplexity,Trigram Laplace,test,% tokens P=0,0.0
+perplexity,Trigram MLE,train,PPL,10.897667458597137
+perplexity,Trigram MLE,train,% tokens P=0,0.0
+perplexity,Trigram MLE,validation,PPL,inf
+perplexity,Trigram MLE,validation,% tokens P=0,0.5081005160499299
+perplexity,Trigram MLE,test,PPL,inf
+perplexity,Trigram MLE,test,% tokens P=0,0.5062141093969948
+corpus size 10%,Unigram Laplace,validation,PPL,884.0603357687561
+corpus size 10%,Bigram add-k,validation,PPL,724.3384664175992
+corpus size 10%,Trigram add-k,validation,PPL,4486.5459776331545
+corpus size 10%,Bigram interp,validation,PPL,365.3650425640472
+corpus size 10%,Trigram interp,validation,PPL,331.0248485363559
+corpus size 25%,Unigram Laplace,validation,PPL,849.995087737352
+corpus size 25%,Bigram add-k,validation,PPL,475.63389470713554
+corpus size 25%,Trigram add-k,validation,PPL,2805.77755507125
+corpus size 25%,Bigram interp,validation,PPL,291.1472349614924
+corpus size 25%,Trigram interp,validation,PPL,258.76273848301867
+corpus size 50%,Unigram Laplace,validation,PPL,839.0868837700117
+corpus size 50%,Bigram add-k,validation,PPL,366.90943264355343
+corpus size 50%,Trigram add-k,validation,PPL,1933.5980031901001
+corpus size 50%,Bigram interp,validation,PPL,253.3448279525065
+corpus size 50%,Trigram interp,validation,PPL,220.3852816224575
+corpus size 100%,Unigram Laplace,validation,PPL,833.5161506952104
+corpus size 100%,Bigram add-k,validation,PPL,297.57905216419596
+corpus size 100%,Trigram add-k,validation,PPL,1334.4063438242683
+corpus size 100%,Bigram interp,validation,PPL,226.0097544245338
+corpus size 100%,Trigram interp,validation,PPL,191.37058306476652
+next-word prediction,Unigram MLE,test,top-1 acc,0.050333333333333334
+next-word prediction,Unigram MLE,test,top-5 acc,0.13733333333333334
+next-word prediction,Bigram interp,test,top-1 acc,0.16366666666666665
+next-word prediction,Bigram interp,test,top-5 acc,0.347
+next-word prediction,Trigram interp,test,top-1 acc,0.195
+next-word prediction,Trigram interp,test,top-5 acc,0.374
+next-word prediction,Trigram Laplace,test,top-1 acc,0.177
+next-word prediction,Trigram Laplace,test,top-5 acc,0.2966666666666667
+next-word example,Trigram interp,test,"context='the cat' actual='—' top5='this 0.329, is 0.058, and 0.033, to 0.033, which 0.029'",
+next-word example,Trigram interp,test,"context='natural language' actual='processing' top5='processing 0.255, models 0.077, </s> 0.050, model 0.039, understanding 0.036'",0.2554
+next-word example,Trigram interp,test,"context='machine learning' actual='applications' top5='</s> 0.067, models 0.055, and 0.045, algorithms 0.040, methods 0.028'",0.0092
+next-word example,Trigram interp,test,"context='neural networks' actual='with' top5='</s> 0.132, and 0.051, are 0.040, with 0.039, to 0.035'",0.0393
+next-word example,Trigram interp,test,"context='in this paper we' actual='propose' top5='propose 0.157, present 0.058, show 0.049, introduce 0.035, study 0.027'",0.1574
+next-word example,Trigram interp,test,"context='reinforcement learning' actual='approach' top5='</s> 0.074, rl 0.066, and 0.036, algorithms 0.034, to 0.026'",0.0115
+next-word example,Trigram interp,test,"context='state of the' actual='art' top5='proposed 0.028, data 0.013, <unk> 0.013, model 0.012, the 0.011'",0.0081
+next-word example,Trigram interp,test,"context='we propose a novel' actual='dialogue' top5='approach 0.044, method 0.041, framework 0.027, <unk> 0.025, deep 0.022'",0.0003
+next-word example,Trigram interp,test,"context='experimental results' actual='show' top5='show 0.160, on 0.118, demonstrate 0.070, in 0.055, </s> 0.044'",0.1598
+next-word example,Trigram interp,test,"context='support vector' actual='machine' top5='machine 0.230, machines 0.157, </s> 0.039, regression 0.038, of 0.029'",0.2296
