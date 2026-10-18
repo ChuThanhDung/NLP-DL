@@ -1,0 +1,200 @@
+experiment,setting,metric,value
+architecture,CBOW,train time (s),25.6342933177948
+architecture,CBOW,vocab,71290.0
+architecture,CBOW,params,14258000.0
+architecture,CBOW,model size (MB),57.032
+architecture,CBOW,WordSim353 Spearman,0.622427979913887
+architecture,CBOW,WordSim353 OOV %,0.56657223796034
+architecture,CBOW,analogy acc,0.31160546331888445
+architecture,CBOW,analogy semantic,0.21048744460856722
+architecture,CBOW,analogy syntactic,0.3619105939987753
+architecture,Skip-gram,train time (s),51.616326093673706
+architecture,Skip-gram,vocab,71290.0
+architecture,Skip-gram,params,14258000.0
+architecture,Skip-gram,model size (MB),57.032
+architecture,Skip-gram,WordSim353 Spearman,0.6885160672172329
+architecture,Skip-gram,WordSim353 OOV %,0.56657223796034
+architecture,Skip-gram,analogy acc,0.3857855565551648
+architecture,Skip-gram,analogy semantic,0.31831610044313147
+architecture,Skip-gram,analogy syntactic,0.41935088793631353
+window,2,train time (s),48.53308916091919
+window,2,vocab,71290.0
+window,2,params,14258000.0
+window,2,model size (MB),57.032
+window,2,WordSim353 Spearman,0.6368642049713128
+window,2,WordSim353 OOV %,0.56657223796034
+window,2,analogy acc,0.30179111801750225
+window,2,analogy semantic,0.19571639586410636
+window,2,analogy syntactic,0.3545621555419473
+window,2,doctor–physician,0.47764497995376587
+window,2,doctor–hospital,0.4371214509010315
+window,2,doctor–nurse,0.5379718542098999
+window,2,cat–dog,0.6635931134223938
+window,2,car–automobile,0.7195039987564087
+window,2,king–queen,0.7076783180236816
+window,2,computer–banana,0.20307283103466034
+window,2,good–bad,0.7624565958976746
+window,5,train time (s),51.616326093673706
+window,5,vocab,71290.0
+window,5,params,14258000.0
+window,5,model size (MB),57.032
+window,5,WordSim353 Spearman,0.6885160672172329
+window,5,WordSim353 OOV %,0.56657223796034
+window,5,analogy acc,0.3857855565551648
+window,5,analogy semantic,0.31831610044313147
+window,5,analogy syntactic,0.41935088793631353
+window,5,doctor–physician,0.465638130903244
+window,5,doctor–hospital,0.46762630343437195
+window,5,doctor–nurse,0.5241081118583679
+window,5,cat–dog,0.6866589784622192
+window,5,car–automobile,0.7769080400466919
+window,5,king–queen,0.6776425838470459
+window,5,computer–banana,0.1685798615217209
+window,5,good–bad,0.7763095498085022
+window,10,train time (s),103.08650660514832
+window,10,vocab,71290.0
+window,10,params,14258000.0
+window,10,model size (MB),57.032
+window,10,WordSim353 Spearman,0.6907004476280155
+window,10,WordSim353 OOV %,0.56657223796034
+window,10,analogy acc,0.4104032060194651
+window,10,analogy semantic,0.396356474643033
+window,10,analogy syntactic,0.41739130434782606
+window,10,doctor–physician,0.4746476411819458
+window,10,doctor–hospital,0.4765143394470215
+window,10,doctor–nurse,0.5449029207229614
+window,10,cat–dog,0.6700993776321411
+window,10,car–automobile,0.7895932793617249
+window,10,king–queen,0.7124626040458679
+window,10,computer–banana,0.19326868653297424
+window,10,good–bad,0.7595072984695435
+dimension,50,train time (s),55.26360511779785
+dimension,50,vocab,71290.0
+dimension,50,params,7129000.0
+dimension,50,model size (MB),28.516
+dimension,50,WordSim353 Spearman,0.6615084505344412
+dimension,50,WordSim353 OOV %,0.56657223796034
+dimension,50,analogy acc,0.2942667866197759
+dimension,50,analogy semantic,0.22624322993599214
+dimension,50,analogy syntactic,0.3281077770973668
+dimension,50,IMDb accuracy (avg emb + LR),0.7228
+dimension,50,doctor–physician,0.551182210445404
+dimension,50,doctor–hospital,0.6003461480140686
+dimension,50,doctor–nurse,0.6776670813560486
+dimension,50,cat–dog,0.8296494483947754
+dimension,50,car–automobile,0.8141564130783081
+dimension,50,king–queen,0.8372112512588501
+dimension,100,train time (s),51.616326093673706
+dimension,100,vocab,71290.0
+dimension,100,params,14258000.0
+dimension,100,model size (MB),57.032
+dimension,100,WordSim353 Spearman,0.6885160672172329
+dimension,100,WordSim353 OOV %,0.56657223796034
+dimension,100,analogy acc,0.3857855565551648
+dimension,100,analogy semantic,0.31831610044313147
+dimension,100,analogy syntactic,0.41935088793631353
+dimension,100,IMDb accuracy (avg emb + LR),0.7538
+dimension,100,doctor–physician,0.465638130903244
+dimension,100,doctor–hospital,0.46762630343437195
+dimension,100,doctor–nurse,0.5241081118583679
+dimension,100,cat–dog,0.6866589784622192
+dimension,100,car–automobile,0.7769080400466919
+dimension,100,king–queen,0.6776425838470459
+dimension,300,train time (s),206.91782188415527
+dimension,300,vocab,71290.0
+dimension,300,params,42774000.0
+dimension,300,model size (MB),171.096
+dimension,300,WordSim353 Spearman,0.6756276261579193
+dimension,300,WordSim353 OOV %,0.56657223796034
+dimension,300,analogy acc,0.3896295084648728
+dimension,300,analogy semantic,0.3084687346134909
+dimension,300,analogy syntactic,0.43000612369871405
+dimension,300,IMDb accuracy (avg emb + LR),0.7848
+dimension,300,doctor–physician,0.4021115303039551
+dimension,300,doctor–hospital,0.2987043261528015
+dimension,300,doctor–nurse,0.43069908022880554
+dimension,300,cat–dog,0.4864475429058075
+dimension,300,car–automobile,0.6368474960327148
+dimension,300,king–queen,0.5678938031196594
+co-occurrence,1,vocabulary,10000.0
+co-occurrence,1,non-zero,871274.0
+co-occurrence,1,density,0.00871274
+co-occurrence,1,time (s),0.33
+co-occurrence,1,doctor–physician (count),0.4799100595710337
+co-occurrence,1,doctor–physician (PPMI),0.16042615018890488
+co-occurrence,1,doctor–hospital (count),0.5558568000863555
+co-occurrence,1,doctor–hospital (PPMI),0.04764726199792479
+co-occurrence,1,doctor–patient (count),0.6145001539853016
+co-occurrence,1,doctor–patient (PPMI),0.0840583164466791
+co-occurrence,1,doctor–music (count),0.6143161042390193
+co-occurrence,1,doctor–music (PPMI),0.018438554509588874
+co-occurrence,1,cat–dog (count),0.5161174954791787
+co-occurrence,1,cat–dog (PPMI),0.12417177524794258
+co-occurrence,1,king–queen (count),0.932264445329283
+co-occurrence,1,king–queen (PPMI),0.0340771793454912
+co-occurrence,1,car–automobile (count),0.36922231660867005
+co-occurrence,1,car–automobile (PPMI),0.21656712205264855
+co-occurrence,1,computer–river (count),0.7023365929627987
+co-occurrence,1,computer–river (PPMI),0.01765188042077258
+co-occurrence,2,vocabulary,10000.0
+co-occurrence,2,non-zero,1673765.0
+co-occurrence,2,density,0.01673765
+co-occurrence,2,time (s),0.47
+co-occurrence,2,doctor–physician (count),0.6047004768564531
+co-occurrence,2,doctor–physician (PPMI),0.08797524556963991
+co-occurrence,2,doctor–hospital (count),0.6132470090834381
+co-occurrence,2,doctor–hospital (PPMI),0.03598449666042647
+co-occurrence,2,doctor–patient (count),0.8083492567105721
+co-occurrence,2,doctor–patient (PPMI),0.0737619862360083
+co-occurrence,2,doctor–music (count),0.7502813547870321
+co-occurrence,2,doctor–music (PPMI),0.041989583493091835
+co-occurrence,2,cat–dog (count),0.6885772932871734
+co-occurrence,2,cat–dog (PPMI),0.13691217812141487
+co-occurrence,2,king–queen (count),0.9643737320479577
+co-occurrence,2,king–queen (PPMI),0.15731676885844598
+co-occurrence,2,car–automobile (count),0.6672654316504847
+co-occurrence,2,car–automobile (PPMI),0.23951682330526486
+co-occurrence,2,computer–river (count),0.8081197379165485
+co-occurrence,2,computer–river (PPMI),0.03323773539727564
+co-occurrence,5,vocabulary,10000.0
+co-occurrence,5,non-zero,3545196.0
+co-occurrence,5,density,0.03545196
+co-occurrence,5,time (s),0.9
+co-occurrence,5,doctor–physician (count),0.7009727136949581
+co-occurrence,5,doctor–physician (PPMI),0.08206300007646643
+co-occurrence,5,doctor–hospital (count),0.7700952243577713
+co-occurrence,5,doctor–hospital (PPMI),0.09757627370740478
+co-occurrence,5,doctor–patient (count),0.8405644417218806
+co-occurrence,5,doctor–patient (PPMI),0.13112957813364745
+co-occurrence,5,doctor–music (count),0.8410008594517028
+co-occurrence,5,doctor–music (PPMI),0.05824271382051988
+co-occurrence,5,cat–dog (count),0.7276735118080204
+co-occurrence,5,cat–dog (PPMI),0.12228389851715565
+co-occurrence,5,king–queen (count),0.9730563704754379
+co-occurrence,5,king–queen (PPMI),0.23051154471809648
+co-occurrence,5,car–automobile (count),0.8472440489330394
+co-occurrence,5,car–automobile (PPMI),0.28263349172200153
+co-occurrence,5,computer–river (count),0.8777990058037187
+co-occurrence,5,computer–river (PPMI),0.04296417779812211
+100-sentence corpus,seed 0,"cos(doctor, physician)",0.5038108825683594
+100-sentence corpus,seed 1,"cos(doctor, physician)",0.5992653369903564
+100-sentence corpus,seed 2,"cos(doctor, physician)",0.542695164680481
+100-sentence corpus,seed 3,"cos(doctor, physician)",0.5187886953353882
+100-sentence corpus,seed 4,"cos(doctor, physician)",0.5413672924041748
+word similarity,Skip-gram,car – automobile,0.7769080400466919
+word similarity,Skip-gram,cat – dog,0.6866589784622192
+word similarity,Skip-gram,king – queen,0.6776425838470459
+word similarity,Skip-gram,doctor – physician,0.465638130903244
+word similarity,Skip-gram,computer – banana,0.1685798615217209
+semantic search,Avg embedding,P@5,0.30000000000000004
+semantic search,Avg embedding,R@10,0.15142085619059303
+semantic search,Avg embedding,MRR,0.6642857142857144
+semantic search,Hybrid,P@5,0.475
+semantic search,Hybrid,R@10,0.23184739396123835
+semantic search,Hybrid,MRR,0.6636904761904762
+semantic search,Query expansion,P@5,0.25
+semantic search,Query expansion,R@10,0.12653843582047242
+semantic search,Query expansion,MRR,0.3213765126512651
+semantic search,TF-IDF,P@5,0.525
+semantic search,TF-IDF,R@10,0.22997223504946618
+semantic search,TF-IDF,MRR,0.642361111111111
