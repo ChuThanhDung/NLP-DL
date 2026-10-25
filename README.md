@@ -5,11 +5,11 @@ Repo này chứa bài làm các lab của môn **Xử lý ngôn ngữ tự nhiê
 - Sinh viên: Chu Thanh Dung — MSSV 23001506
 - Giảng viên / TA: Phạm Ngọc Hải
 
-Mỗi lab đi theo cùng một chu trình: **tính tay → dự đoán → thí nghiệm → cài đặt → ứng dụng → đánh giá → phân tích lỗi → reflection**. Các lab nối tiếp nhau, đi từ biểu diễn thưa dựa trên đếm từ tới mô hình tuần tự:
+Mỗi lab đi theo cùng một chu trình: **tính tay → dự đoán → thí nghiệm → cài đặt → ứng dụng → đánh giá → phân tích lỗi → reflection**. Các lab nối tiếp nhau, đi từ biểu diễn thưa dựa trên đếm từ tới mô hình tuần tự và attention:
 
 ```
-TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN / LSTM / GRU  →  (Attention, Transformer)
- Lab 1       Lab 2          Lab 3                Lab 4                   Lab 5
+TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN / LSTM / GRU  →  Attention  →  (Transformer)
+ Lab 1       Lab 2          Lab 3                Lab 4                   Lab 5             Lab 6
 ```
 
 ## Các lab
@@ -21,6 +21,7 @@ TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN 
 | [Lab 3](lab3/) | Co-occurrence, Word2Vec, semantic search | text8 (17M token Wikipedia) | Skip-gram: WordSim-353 ρ = 0.689, analogy 38.6%; phân tích polysemy (*bank*, *doctor*) |
 | [Lab 4](Lab4/) | Text classification: TF-IDF vs Average Word2Vec | IMDb (50 000 review) | TF-IDF uni + bigram + Logistic Regression: accuracy 0.902 |
 | [Lab 5](lab5/) | Sequence models: RNN, LSTM, GRU | IMDb | GRU 0.832, LSTM 0.816, RNN 0.741 (baseline TF-IDF 0.888); gradient tới token đầu của RNN gần như bằng 0 |
+| [Lab 6](lab6/) | Attention: scaled dot-product, self-attention (NumPy), attention classifier | text8, IMDb | Self-attention classifier 0.835 so với LSTM 0.826, train nhanh hơn 3.4 lần; không nhạy thứ tự từ; chi phí O(T²); attention chỉ khớp một phần với token quyết định (ρ = 0.36) |
 
 ## Cấu trúc mỗi thư mục lab
 
@@ -37,7 +38,7 @@ TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN 
 
 ## Chạy lại
 
-Môi trường: Python 3.12. Các thư viện chính: `scikit-learn`, `gensim`, `datasets`, `transformers`, `pandas`, `matplotlib`, `torch` (Lab 5, có GPU thì nhanh hơn).
+Môi trường: Python 3.12. Các thư viện chính: `scikit-learn`, `gensim`, `datasets`, `transformers`, `pandas`, `matplotlib`, `torch` (Lab 5, 6; có GPU thì nhanh hơn).
 
 ```bash
 pip install scikit-learn gensim datasets transformers pandas matplotlib torch nbconvert ipykernel

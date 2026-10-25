@@ -1,0 +1,167 @@
+experiment,setting,metric,value
+exp1 query A (sentiment),The,attention,0.001539165243826283
+exp1 query A (sentiment),movie,attention,0.05075743279544122
+exp1 query A (sentiment),was,attention,0.0005998132843170327
+exp1 query A (sentiment),surprisingly,attention,0.009041762811901473
+exp1 query A (sentiment),good,attention,0.899234809783363
+exp1 query A (sentiment),despite,attention,0.0034897061831247475
+exp1 query A (sentiment),a,attention,0.003451747964669374
+exp1 query A (sentiment),very,attention,0.006241880415338685
+exp1 query A (sentiment),slow,attention,0.02304709547285093
+exp1 query A (sentiment),beginning,attention,0.0025965860451672715
+exp2 query,A — sentiment,top token,good
+exp2 query,A — sentiment,max weight,0.899234809783363
+exp2 query,A — sentiment,entropy,0.4771195161932815
+exp2 query,B — topic (phim ảnh),top token,movie
+exp2 query,B — topic (phim ảnh),max weight,0.9941010755553936
+exp2 query,B — topic (phim ảnh),entropy,0.04846510826103878
+exp2 query,C — thời gian / thứ tự,top token,beginning
+exp2 query,C — thời gian / thứ tự,max weight,0.953851327175142
+exp2 query,C — thời gian / thứ tự,entropy,0.2694790975293575
+temperature (Exp 1 scores),T=0.5,max weight,0.9959824805364575
+temperature (Exp 1 scores),T=0.5,entropy,0.02893680318908206
+temperature (Exp 1 scores),T=1.0,max weight,0.899234809783363
+temperature (Exp 1 scores),T=1.0,entropy,0.4771195161932815
+temperature (Exp 1 scores),T=2.0,max weight,0.5475102226087522
+temperature (Exp 1 scores),T=2.0,entropy,1.5884262160992766
+scaling vs d_k,d_k=4 unscaled,mean max weight,0.4970533848696288
+scaling vs d_k,d_k=4 unscaled,mean entropy,1.4248021418413785
+scaling vs d_k,d_k=4 unscaled,mean ‖J‖ softmax,0.3348866626374562
+scaling vs d_k,d_k=4 scaled,mean max weight,0.308117987671247
+scaling vs d_k,d_k=4 scaled,mean entropy,1.9404468685926488
+scaling vs d_k,d_k=4 scaled,mean ‖J‖ softmax,0.34013420614133066
+scaling vs d_k,d_k=16 unscaled,mean max weight,0.7318476144973892
+scaling vs d_k,d_k=16 unscaled,mean entropy,0.7314540945180582
+scaling vs d_k,d_k=16 unscaled,mean ‖J‖ softmax,0.2627687035810408
+scaling vs d_k,d_k=16 scaled,mean max weight,0.3187264925659283
+scaling vs d_k,d_k=16 scaled,mean entropy,1.9233668950296767
+scaling vs d_k,d_k=16 scaled,mean ‖J‖ softmax,0.3467925628794251
+scaling vs d_k,d_k=64 unscaled,mean max weight,0.8712791863002639
+scaling vs d_k,d_k=64 unscaled,mean entropy,0.32916022853850563
+scaling vs d_k,d_k=64 unscaled,mean ‖J‖ softmax,0.15420130404356908
+scaling vs d_k,d_k=64 scaled,mean max weight,0.318687005457205
+scaling vs d_k,d_k=64 scaled,mean entropy,1.9292389980970024
+scaling vs d_k,d_k=64 scaled,mean ‖J‖ softmax,0.34812745795826183
+scaling vs d_k,d_k=256 unscaled,mean max weight,0.9270803561755068
+scaling vs d_k,d_k=256 unscaled,mean entropy,0.17617049753004163
+scaling vs d_k,d_k=256 unscaled,mean ‖J‖ softmax,0.09421254667556574
+scaling vs d_k,d_k=256 scaled,mean max weight,0.3174724520788975
+scaling vs d_k,d_k=256 scaled,mean entropy,1.9264682668846904
+scaling vs d_k,d_k=256 scaled,mean ‖J‖ softmax,0.34699963602612355
+scaling vs d_k,d_k=1024 unscaled,mean max weight,0.9655775110548421
+scaling vs d_k,d_k=1024 unscaled,mean entropy,0.08252952962576174
+scaling vs d_k,d_k=1024 unscaled,mean ‖J‖ softmax,0.0474155659183881
+scaling vs d_k,d_k=1024 scaled,mean max weight,0.32334793526018807
+scaling vs d_k,d_k=1024 scaled,mean entropy,1.9188303110307456
+scaling vs d_k,d_k=1024 scaled,mean ‖J‖ softmax,0.34720434682770984
+exp4 IMDb test,LSTM,params,2618089
+exp4 IMDb test,LSTM,best epoch,4
+exp4 IMDb test,LSTM,train time (s),42.11752653121948
+exp4 IMDb test,LSTM,peak GPU mem (MB),361.51904296875
+exp4 IMDb test,LSTM,best val loss,0.4044448733329773
+exp4 IMDb test,LSTM,accuracy,0.82644
+exp4 IMDb test,LSTM,precision,0.8612020890501904
+exp4 IMDb test,LSTM,recall,0.77832
+exp4 IMDb test,LSTM,f1,0.8176660923645838
+exp4 IMDb test,Self-Attention (pooling trên H),params,2538857
+exp4 IMDb test,Self-Attention (pooling trên H),best epoch,3
+exp4 IMDb test,Self-Attention (pooling trên H),train time (s),12.673344612121582
+exp4 IMDb test,Self-Attention (pooling trên H),peak GPU mem (MB),581.52294921875
+exp4 IMDb test,Self-Attention (pooling trên H),best val loss,0.36039385199546814
+exp4 IMDb test,Self-Attention (pooling trên H),accuracy,0.83176
+exp4 IMDb test,Self-Attention (pooling trên H),precision,0.8717948717948718
+exp4 IMDb test,Self-Attention (pooling trên H),recall,0.77792
+exp4 IMDb test,Self-Attention (pooling trên H),f1,0.8221865223640822
+exp4 IMDb test,Self-Attention,params,2538857
+exp4 IMDb test,Self-Attention,best epoch,3
+exp4 IMDb test,Self-Attention,train time (s),12.505400896072388
+exp4 IMDb test,Self-Attention,peak GPU mem (MB),600.89404296875
+exp4 IMDb test,Self-Attention,best val loss,0.35754647850990295
+exp4 IMDb test,Self-Attention,accuracy,0.83512
+exp4 IMDb test,Self-Attention,precision,0.8746199248792702
+exp4 IMDb test,Self-Attention,recall,0.7824
+exp4 IMDb test,Self-Attention,f1,0.8259437547504433
+exp4 IMDb test,Self-Attention + positional emb.,params,2558857
+exp4 IMDb test,Self-Attention + positional emb.,best epoch,2
+exp4 IMDb test,Self-Attention + positional emb.,train time (s),12.920534610748291
+exp4 IMDb test,Self-Attention + positional emb.,peak GPU mem (MB),620.6484375
+exp4 IMDb test,Self-Attention + positional emb.,best val loss,0.37168261408805847
+exp4 IMDb test,Self-Attention + positional emb.,accuracy,0.83044
+exp4 IMDb test,Self-Attention + positional emb.,precision,0.8409409822534049
+exp4 IMDb test,Self-Attention + positional emb.,recall,0.81504
+exp4 IMDb test,Self-Attention + positional emb.,f1,0.8277879341864717
+β concentration (2000 test reviews),Self-Attention (pooling trên H),β max trung bình,0.009757253341376781
+β concentration (2000 test reviews),Self-Attention (pooling trên H),β đều (1/L) trung bình,0.007344577134102202
+β concentration (2000 test reviews),Self-Attention (pooling trên H),entropy β / log L,0.9976548768693153
+β concentration (2000 test reviews),Self-Attention (pooling trên H),khối lượng β trên 10% token cao nhất,0.11949971318244934
+β concentration (2000 test reviews),Self-Attention,β max trung bình,0.02703419141471386
+β concentration (2000 test reviews),Self-Attention,β đều (1/L) trung bình,0.007344577134102202
+β concentration (2000 test reviews),Self-Attention,entropy β / log L,0.9683579985164608
+β concentration (2000 test reviews),Self-Attention,khối lượng β trên 10% token cao nhất,0.21886758506298065
+β concentration (2000 test reviews),Self-Attention + positional emb.,β max trung bình,0.014536586590111256
+β concentration (2000 test reviews),Self-Attention + positional emb.,β đều (1/L) trung bình,0.007344577134102202
+β concentration (2000 test reviews),Self-Attention + positional emb.,entropy β / log L,0.9918362595788917
+β concentration (2000 test reviews),Self-Attention + positional emb.,khối lượng β trên 10% token cao nhất,0.15254153311252594
+order sensitivity,LSTM,max |ΔP| when reordering,0.38163602
+order sensitivity,Self-Attention (pooling trên H),max |ΔP| when reordering,7.4505806e-08
+order sensitivity,Self-Attention,max |ΔP| when reordering,2.3283064e-10
+order sensitivity,Self-Attention + positional emb.,max |ΔP| when reordering,0.0093323225
+exp3 visualization,"Word2Vec, W = I",mean self weight,0.9978396368110685
+exp3 visualization,"Word2Vec, W = I",mean row entropy,0.015909113348400818
+exp3 visualization,Self-Attention đã train (IMDb),mean self weight,0.14229058
+exp3 visualization,Self-Attention đã train (IMDb),mean row entropy,1.3193250825776455
+"exp5 cost (GPU, batch 32)",LSTM T=50,ms per train step,11.354619999838178
+"exp5 cost (GPU, batch 32)",LSTM T=50,peak MB,197.09521484375
+"exp5 cost (GPU, batch 32)",Self-Attention T=50,ms per train step,3.7765000000945292
+"exp5 cost (GPU, batch 32)",Self-Attention T=50,peak MB,195.583984375
+"exp5 cost (GPU, batch 32)",LSTM T=100,ms per train step,10.451839999950607
+"exp5 cost (GPU, batch 32)",LSTM T=100,peak MB,205.5146484375
+"exp5 cost (GPU, batch 32)",Self-Attention T=100,ms per train step,3.2093400001031114
+"exp5 cost (GPU, batch 32)",Self-Attention T=100,peak MB,195.59619140625
+"exp5 cost (GPU, batch 32)",LSTM T=200,ms per train step,16.86489999992773
+"exp5 cost (GPU, batch 32)",LSTM T=200,peak MB,225.90966796875
+"exp5 cost (GPU, batch 32)",Self-Attention T=200,ms per train step,4.156280000097468
+"exp5 cost (GPU, batch 32)",Self-Attention T=200,peak MB,211.18115234375
+"exp5 cost (GPU, batch 32)",LSTM T=400,ms per train step,29.939899999953923
+"exp5 cost (GPU, batch 32)",LSTM T=400,peak MB,255.630859375
+"exp5 cost (GPU, batch 32)",Self-Attention T=400,ms per train step,7.979679999698419
+"exp5 cost (GPU, batch 32)",Self-Attention T=400,peak MB,285.27099609375
+"exp5 cost (GPU, batch 32)",LSTM T=800,ms per train step,54.99603999996907
+"exp5 cost (GPU, batch 32)",LSTM T=800,peak MB,318.8798828125
+"exp5 cost (GPU, batch 32)",Self-Attention T=800,ms per train step,22.33330000017304
+"exp5 cost (GPU, batch 32)",Self-Attention T=800,peak MB,547.763671875
+"exp5 cost (GPU, batch 32)",LSTM T=1600,ms per train step,101.41182000006665
+"exp5 cost (GPU, batch 32)",LSTM T=1600,peak MB,451.142578125
+"exp5 cost (GPU, batch 32)",Self-Attention T=1600,ms per train step,78.09398000026704
+"exp5 cost (GPU, batch 32)",Self-Attention T=1600,peak MB,1547.2490234375
+"exp5 cost (NumPy CPU, 1 câu)",T=10,ms,0.030669999978272244
+"exp5 cost (NumPy CPU, 1 câu)",T=100,ms,0.3771700000470446
+"exp5 cost (NumPy CPU, 1 câu)",T=500,ms,6.680704999962472
+"exp5 cost (NumPy CPU, 1 câu)",T=1000,ms,27.700074999938806
+"exp5 cost (NumPy CPU, 1 câu)",T=2000,ms,106.66670000015681
+"exp5 cost (NumPy CPU, 1 câu)",T=4000,ms,405.5836333336629
+application,I like this movie.,P(pos) Self-Attention,0.028230808675289154
+application,I like this movie.,P(pos) LSTM,0.5304978
+application,I do not like this movie.,P(pos) Self-Attention,0.0002332961739739403
+application,I do not like this movie.,P(pos) LSTM,0.33231205
+application,"I thought this movie would be bad, but it was actually excellent.",P(pos) Self-Attention,0.3110225200653076
+application,"I thought this movie would be bad, but it was actually excellent.",P(pos) LSTM,0.561108
+application,"The movie was extremely long and the acting was sometimes boring, but the final scene was absolutely fantastic.",P(pos) Self-Attention,0.0012042761081829667
+application,"The movie was extremely long and the acting was sometimes boring, but the final scene was absolutely fantastic.",P(pos) LSTM,0.32839072
+application,This movie is not bad at all.,P(pos) Self-Attention,0.002395736752077937
+application,This movie is not bad at all.,P(pos) LSTM,0.16086759
+application,Not good.,P(pos) Self-Attention,0.9835841059684753
+application,Not good.,P(pos) LSTM,0.52249485
+attention faithfulness (300 test reviews),Self-Attention,reviews,300
+attention faithfulness (300 test reviews),Self-Attention,"Spearman ρ(β, |ΔP|) trung bình",0.3550785318704204
+attention faithfulness (300 test reviews),Self-Attention,ρ trung vị,0.3557970641492412
+attention faithfulness (300 test reviews),Self-Attention,|ΔP| bỏ 5 token β cao nhất,0.10810893
+attention faithfulness (300 test reviews),Self-Attention,|ΔP| bỏ 5 token ngẫu nhiên,0.0231838
+attention faithfulness (300 test reviews),Self-Attention,|ΔP| bỏ 5 token β thấp nhất,0.057529196
+attention faithfulness (300 test reviews),Self-Attention,% đổi nhãn (bỏ top-5 β),0.10333333333333333
+attention faithfulness (300 test reviews),Self-Attention,% đổi nhãn (bỏ 5 ngẫu nhiên),0.017777777777777778
+attention faithfulness (300 test reviews),Self-Attention,β trên từ |hệ số LR| ≥ 2,0.11521833
+attention faithfulness (300 test reviews),Self-Attention,tỉ lệ token là từ |hệ số LR| ≥ 2,0.11239165977041528
+attention faithfulness (300 test reviews),Self-Attention,β trên từ |hệ số LR| ≥ 4,0.020026559
+attention faithfulness (300 test reviews),Self-Attention,tỉ lệ token là từ |hệ số LR| ≥ 4,0.01120648390838781
+attention faithfulness (300 test reviews),Self-Attention,% review: token β cao nhất = token |ΔP| lớn nhất,0.30333333333333334
