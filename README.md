@@ -8,8 +8,8 @@ Repo này chứa bài làm các lab của môn **Xử lý ngôn ngữ tự nhiê
 Mỗi lab đi theo cùng một chu trình: **tính tay → dự đoán → thí nghiệm → cài đặt → ứng dụng → đánh giá → phân tích lỗi → reflection**. Các lab nối tiếp nhau, đi từ biểu diễn thưa dựa trên đếm từ tới mô hình tuần tự và attention:
 
 ```
-TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN / LSTM / GRU  →  Attention  →  (Transformer)
- Lab 1       Lab 2          Lab 3                Lab 4                   Lab 5             Lab 6
+TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN / LSTM / GRU  →  Attention  →  Transformer
+ Lab 1       Lab 2          Lab 3                Lab 4                   Lab 5             Lab 6         Lab 7
 ```
 
 ## Các lab
@@ -22,6 +22,7 @@ TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN 
 | [Lab 4](Lab4/) | Text classification: TF-IDF vs Average Word2Vec | IMDb (50 000 review) | TF-IDF uni + bigram + Logistic Regression: accuracy 0.902 |
 | [Lab 5](lab5/) | Sequence models: RNN, LSTM, GRU | IMDb | GRU 0.832, LSTM 0.816, RNN 0.741 (baseline TF-IDF 0.888); gradient tới token đầu của RNN gần như bằng 0 |
 | [Lab 6](lab6/) | Attention: scaled dot-product, self-attention (NumPy), attention classifier | text8, IMDb | Self-attention classifier 0.835 so với LSTM 0.826, train nhanh hơn 3.4 lần; không nhạy thứ tự từ; chi phí O(T²); attention chỉ khớp một phần với token quyết định (ρ = 0.36) |
+| [Lab 7](lab7/) | Transformer: multi-head attention, positional encoding, FFN, residual + LayerNorm; Transformer block tự ghép | IMDb | Transformer 0.835 so với LSTM 0.825 (3 seed), nhanh hơn 1.45 lần; không PE thì không phân biệt thứ tự; số head không đổi accuracy; chi phí O(T²) (T ≥ 512 chậm hơn LSTM) |
 
 ## Cấu trúc mỗi thư mục lab
 

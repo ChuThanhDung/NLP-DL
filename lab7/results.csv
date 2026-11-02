@@ -1,0 +1,320 @@
+experiment,setting,metric,value
+exp1 permutation (random block),i love nlp | no PE,mean-pooled diff,2.2518756281897367e-07
+exp1 permutation (random block),i love nlp | PE,mean-pooled diff,0.08900434523820877
+exp1 permutation (random block),dog bites man | no PE,mean-pooled diff,1.911186444658597e-07
+exp1 permutation (random block),dog bites man | PE,mean-pooled diff,0.27813318371772766
+exp4 LSTM vs Transformer,LSTM,params,3332481.0
+exp4 LSTM vs Transformer,LSTM,train_time,60.68026312192281
+exp4 LSTM vs Transformer,LSTM,accuracy,0.82532
+exp4 LSTM vs Transformer,LSTM,acc_std,0.008886754188116196
+exp4 LSTM vs Transformer,LSTM,precision,0.844596967320347
+exp4 LSTM vs Transformer,LSTM,recall,0.7976533333333333
+exp4 LSTM vs Transformer,LSTM,f1,0.8201500292724156
+exp4 LSTM vs Transformer,LSTM,f1_std,0.01314813160309727
+exp4 LSTM vs Transformer,LSTM,skipped,0.0
+exp4 LSTM vs Transformer,"Transformer (mean, PE)",params,3332865.0
+exp4 LSTM vs Transformer,"Transformer (mean, PE)",train_time,41.83471401532491
+exp4 LSTM vs Transformer,"Transformer (mean, PE)",accuracy,0.8350133333333334
+exp4 LSTM vs Transformer,"Transformer (mean, PE)",acc_std,0.004260578990387684
+exp4 LSTM vs Transformer,"Transformer (mean, PE)",precision,0.8406433066632292
+exp4 LSTM vs Transformer,"Transformer (mean, PE)",recall,0.8275466666666667
+exp4 LSTM vs Transformer,"Transformer (mean, PE)",f1,0.8336525690574462
+exp4 LSTM vs Transformer,"Transformer (mean, PE)",f1_std,0.00774608000154617
+exp4 LSTM vs Transformer,"Transformer (mean, PE)",skipped,2.0
+exp4 LSTM vs Transformer,Transformer không PE,params,3332865.0
+exp4 LSTM vs Transformer,Transformer không PE,train_time,41.41981633504232
+exp4 LSTM vs Transformer,Transformer không PE,accuracy,0.8379866666666667
+exp4 LSTM vs Transformer,Transformer không PE,acc_std,0.006575388454938068
+exp4 LSTM vs Transformer,Transformer không PE,precision,0.8488407915743329
+exp4 LSTM vs Transformer,Transformer không PE,recall,0.82432
+exp4 LSTM vs Transformer,Transformer không PE,f1,0.8354367599013347
+exp4 LSTM vs Transformer,Transformer không PE,f1_std,0.012346672994327474
+exp4 LSTM vs Transformer,Transformer không PE,skipped,0.0
+exp4 LSTM vs Transformer,Transformer (nn.TransformerEncoderLayer),params,3332865.0
+exp4 LSTM vs Transformer,Transformer (nn.TransformerEncoderLayer),train_time,46.59876012802124
+exp4 LSTM vs Transformer,Transformer (nn.TransformerEncoderLayer),accuracy,0.83324
+exp4 LSTM vs Transformer,Transformer (nn.TransformerEncoderLayer),acc_std,
+exp4 LSTM vs Transformer,Transformer (nn.TransformerEncoderLayer),precision,0.8539383125159317
+exp4 LSTM vs Transformer,Transformer (nn.TransformerEncoderLayer),recall,0.804
+exp4 LSTM vs Transformer,Transformer (nn.TransformerEncoderLayer),f1,0.8282170670402571
+exp4 LSTM vs Transformer,Transformer (nn.TransformerEncoderLayer),f1_std,
+exp4 LSTM vs Transformer,Transformer (nn.TransformerEncoderLayer),skipped,2.0
+exp2 heads,1 heads,d_k,128.0
+exp2 heads,1 heads,params,3332865.0
+exp2 heads,1 heads,train_time,27.32140056292216
+exp2 heads,1 heads,accuracy,0.83076
+exp2 heads,1 heads,acc_std,0.00441959274141863
+exp2 heads,1 heads,f1,0.8280181728991525
+exp2 heads,1 heads,f1_std,0.006688740594273297
+exp2 heads,2 heads,d_k,64.0
+exp2 heads,2 heads,params,3332865.0
+exp2 heads,2 heads,train_time,34.077933390935264
+exp2 heads,2 heads,accuracy,0.8353733333333334
+exp2 heads,2 heads,acc_std,0.002906636085466094
+exp2 heads,2 heads,f1,0.8340094923438106
+exp2 heads,2 heads,f1_std,0.004474566270445469
+exp2 heads,4 heads,d_k,32.0
+exp2 heads,4 heads,params,3332865.0
+exp2 heads,4 heads,train_time,41.83471401532491
+exp2 heads,4 heads,accuracy,0.8350133333333334
+exp2 heads,4 heads,acc_std,0.004260578990387684
+exp2 heads,4 heads,f1,0.8336525690574462
+exp2 heads,4 heads,f1_std,0.00774608000154617
+exp2 heads,8 heads,d_k,16.0
+exp2 heads,8 heads,params,3332865.0
+exp2 heads,8 heads,train_time,59.99291809399923
+exp2 heads,8 heads,accuracy,0.8368133333333333
+exp2 heads,8 heads,acc_std,0.00427201747811659
+exp2 heads,8 heads,f1,0.8381377903119361
+exp2 heads,8 heads,f1_std,0.00764879237841997
+exp6 pooling,"Transformer (mean, PE)",accuracy,0.8350133333333334
+exp6 pooling,"Transformer (mean, PE)",acc_std,0.004260578990387684
+exp6 pooling,"Transformer (mean, PE)",f1,0.8336525690574462
+exp6 pooling,"Transformer (mean, PE)",f1_std,0.00774608000154617
+exp6 pooling,"Transformer (mean, PE)",train_time,41.83471401532491
+exp6 pooling,"Transformer (CLS, PE)",accuracy,0.8364533333333334
+exp6 pooling,"Transformer (CLS, PE)",acc_std,0.0041458091289075
+exp6 pooling,"Transformer (CLS, PE)",f1,0.8341200570326182
+exp6 pooling,"Transformer (CLS, PE)",f1_std,0.007424340966739576
+exp6 pooling,"Transformer (CLS, PE)",train_time,42.56291262308756
+learning curve,LSTM | epoch 1,train loss,0.6307059373026517
+learning curve,LSTM | epoch 1,val loss,0.5614474415779114
+learning curve,LSTM | epoch 2,train loss,0.5011144551471289
+learning curve,LSTM | epoch 2,val loss,0.4870361387729645
+learning curve,LSTM | epoch 3,train loss,0.3864652797626885
+learning curve,LSTM | epoch 3,val loss,0.42202654480934143
+learning curve,LSTM | epoch 4,train loss,0.30526200234994694
+learning curve,LSTM | epoch 4,val loss,0.43251851201057434
+learning curve,LSTM | epoch 5,train loss,0.232461496245961
+learning curve,LSTM | epoch 5,val loss,0.3986181318759918
+learning curve,LSTM | epoch 6,train loss,0.179210625671541
+learning curve,LSTM | epoch 6,val loss,0.4175339341163635
+learning curve,"Transformer (mean, PE) | epoch 1",train loss,0.5457222220670063
+learning curve,"Transformer (mean, PE) | epoch 1",val loss,0.4269561171531677
+learning curve,"Transformer (mean, PE) | epoch 2",train loss,0.3610660405721565
+learning curve,"Transformer (mean, PE) | epoch 2",val loss,0.35714128613471985
+learning curve,"Transformer (mean, PE) | epoch 3",train loss,0.2723470029043863
+learning curve,"Transformer (mean, PE) | epoch 3",val loss,0.36388298869132996
+learning curve,"Transformer (mean, PE) | epoch 4",train loss,0.20523414282484514
+learning curve,"Transformer (mean, PE) | epoch 4",val loss,0.3931519389152527
+learning curve,"Transformer (mean, PE) | epoch 5",train loss,0.14714950099801288
+learning curve,"Transformer (mean, PE) | epoch 5",val loss,0.4217369258403778
+learning curve,"Transformer (mean, PE) | epoch 6",train loss,0.09411353460447003
+learning curve,"Transformer (mean, PE) | epoch 6",val loss,0.561672568321228
+learning curve,Transformer không PE | epoch 1,train loss,0.4976561155291929
+learning curve,Transformer không PE | epoch 1,val loss,0.39640888571739197
+learning curve,Transformer không PE | epoch 2,train loss,0.32373221821947246
+learning curve,Transformer không PE | epoch 2,val loss,0.35528746247291565
+learning curve,Transformer không PE | epoch 3,train loss,0.23981843088092392
+learning curve,Transformer không PE | epoch 3,val loss,0.3670879900455475
+learning curve,Transformer không PE | epoch 4,train loss,0.17362674888116267
+learning curve,Transformer không PE | epoch 4,val loss,0.4022810757160187
+learning curve,Transformer không PE | epoch 5,train loss,0.1157312765541741
+learning curve,Transformer không PE | epoch 5,val loss,0.46893227100372314
+learning curve,Transformer không PE | epoch 6,train loss,0.07010493663900715
+learning curve,Transformer không PE | epoch 6,val loss,0.6278557777404785
+learning curve,"Transformer (CLS, PE) | epoch 1",train loss,0.570177452203913
+learning curve,"Transformer (CLS, PE) | epoch 1",val loss,0.4820970594882965
+learning curve,"Transformer (CLS, PE) | epoch 2",train loss,0.3965251901144604
+learning curve,"Transformer (CLS, PE) | epoch 2",val loss,0.4326208233833313
+learning curve,"Transformer (CLS, PE) | epoch 3",train loss,0.3208375727098785
+learning curve,"Transformer (CLS, PE) | epoch 3",val loss,0.3920576274394989
+learning curve,"Transformer (CLS, PE) | epoch 4",train loss,0.262631904896092
+learning curve,"Transformer (CLS, PE) | epoch 4",val loss,0.34992972016334534
+learning curve,"Transformer (CLS, PE) | epoch 5",train loss,0.21267457112594404
+learning curve,"Transformer (CLS, PE) | epoch 5",val loss,0.4316800832748413
+learning curve,"Transformer (CLS, PE) | epoch 6",train loss,0.17358896406663324
+learning curve,"Transformer (CLS, PE) | epoch 6",val loss,0.38753822445869446
+confusion matrix,LSTM,TN FP FN TP,10464 2036 2104 10396
+confusion matrix,"Transformer (mean, PE)",TN FP FN TP,10273 2227 1929 10571
+confusion matrix,Transformer không PE,TN FP FN TP,10136 2364 1636 10864
+exp3 head stats (500 test reviews),4 heads trained | head 1,mean max weight,0.16140127521008252
+exp3 head stats (500 test reviews),4 heads trained | head 1,entropy / log L,0.7874741083644141
+exp3 head stats (500 test reviews),4 heads trained | head 1,self,0.012509927225823492
+exp3 head stats (500 test reviews),4 heads trained | head 1,kề bên |i−j|=1,0.014418804489076138
+exp3 head stats (500 test reviews),4 heads trained | head 1,mean |i−j|,55.05446582654743
+exp3 head stats (500 test reviews),4 heads trained | head 2,mean max weight,0.17503711449354886
+exp3 head stats (500 test reviews),4 heads trained | head 2,entropy / log L,0.7742730089549562
+exp3 head stats (500 test reviews),4 heads trained | head 2,self,0.0075710514023752925
+exp3 head stats (500 test reviews),4 heads trained | head 2,kề bên |i−j|=1,0.015028215256519616
+exp3 head stats (500 test reviews),4 heads trained | head 2,mean |i−j|,57.01247643091306
+exp3 head stats (500 test reviews),4 heads trained | head 3,mean max weight,0.21367518500983715
+exp3 head stats (500 test reviews),4 heads trained | head 3,entropy / log L,0.7347406595295362
+exp3 head stats (500 test reviews),4 heads trained | head 3,self,0.008639441595054077
+exp3 head stats (500 test reviews),4 heads trained | head 3,kề bên |i−j|=1,0.014399105666205288
+exp3 head stats (500 test reviews),4 heads trained | head 3,mean |i−j|,54.973783511371266
+exp3 head stats (500 test reviews),4 heads trained | head 4,mean max weight,0.13179907539486885
+exp3 head stats (500 test reviews),4 heads trained | head 4,entropy / log L,0.8173464933476585
+exp3 head stats (500 test reviews),4 heads trained | head 4,self,0.009923508891557594
+exp3 head stats (500 test reviews),4 heads trained | head 4,kề bên |i−j|=1,0.014687817309051752
+exp3 head stats (500 test reviews),4 heads trained | head 4,mean |i−j|,57.82170215266647
+exp3 head stats (500 test reviews),4 heads init | head 1,mean max weight,0.021866260394454003
+exp3 head stats (500 test reviews),4 heads init | head 1,entropy / log L,0.9780751331459898
+exp3 head stats (500 test reviews),4 heads init | head 1,self,0.007646807965828184
+exp3 head stats (500 test reviews),4 heads init | head 1,kề bên |i−j|=1,0.014520680893212557
+exp3 head stats (500 test reviews),4 heads init | head 1,mean |i−j|,54.250208764639936
+exp3 head stats (500 test reviews),4 heads init | head 2,mean max weight,0.01990393789857626
+exp3 head stats (500 test reviews),4 heads init | head 2,entropy / log L,0.982024790976418
+exp3 head stats (500 test reviews),4 heads init | head 2,self,0.007193309685594474
+exp3 head stats (500 test reviews),4 heads init | head 2,kề bên |i−j|=1,0.015066084688529373
+exp3 head stats (500 test reviews),4 heads init | head 2,mean |i−j|,54.20993038687611
+exp3 head stats (500 test reviews),4 heads init | head 3,mean max weight,0.02095947857014835
+exp3 head stats (500 test reviews),4 heads init | head 3,entropy / log L,0.9791819917230172
+exp3 head stats (500 test reviews),4 heads init | head 3,self,0.007305200107389814
+exp3 head stats (500 test reviews),4 heads init | head 3,kề bên |i−j|=1,0.014632767150178552
+exp3 head stats (500 test reviews),4 heads init | head 3,mean |i−j|,53.99317159454792
+exp3 head stats (500 test reviews),4 heads init | head 4,mean max weight,0.020355237765237687
+exp3 head stats (500 test reviews),4 heads init | head 4,entropy / log L,0.9804787802780991
+exp3 head stats (500 test reviews),4 heads init | head 4,self,0.007678864922773509
+exp3 head stats (500 test reviews),4 heads init | head 4,kề bên |i−j|=1,0.014520223719999194
+exp3 head stats (500 test reviews),4 heads init | head 4,mean |i−j|,53.34944885167091
+exp3 head stats (500 test reviews),8 heads trained | head 1,mean max weight,0.1716911760866642
+exp3 head stats (500 test reviews),8 heads trained | head 1,entropy / log L,0.770009105241042
+exp3 head stats (500 test reviews),8 heads trained | head 1,self,0.007914082063245521
+exp3 head stats (500 test reviews),8 heads trained | head 1,kề bên |i−j|=1,0.013495715970173478
+exp3 head stats (500 test reviews),8 heads trained | head 1,mean |i−j|,55.56860539800255
+exp3 head stats (500 test reviews),8 heads trained | head 2,mean max weight,0.15638645996898412
+exp3 head stats (500 test reviews),8 heads trained | head 2,entropy / log L,0.8003642013063906
+exp3 head stats (500 test reviews),8 heads trained | head 2,self,0.008555844644878165
+exp3 head stats (500 test reviews),8 heads trained | head 2,kề bên |i−j|=1,0.01379219195432961
+exp3 head stats (500 test reviews),8 heads trained | head 2,mean |i−j|,56.05148169708977
+exp3 head stats (500 test reviews),8 heads trained | head 3,mean max weight,0.25004063606262206
+exp3 head stats (500 test reviews),8 heads trained | head 3,entropy / log L,0.692015453174136
+exp3 head stats (500 test reviews),8 heads trained | head 3,self,0.008155848165355483
+exp3 head stats (500 test reviews),8 heads trained | head 3,kề bên |i−j|=1,0.014951166292652487
+exp3 head stats (500 test reviews),8 heads trained | head 3,mean |i−j|,55.09438039486775
+exp3 head stats (500 test reviews),8 heads trained | head 4,mean max weight,0.22454482194781303
+exp3 head stats (500 test reviews),8 heads trained | head 4,entropy / log L,0.7216801620920735
+exp3 head stats (500 test reviews),8 heads trained | head 4,self,0.007802551094759267
+exp3 head stats (500 test reviews),8 heads trained | head 4,kề bên |i−j|=1,0.015107069396413863
+exp3 head stats (500 test reviews),8 heads trained | head 4,mean |i−j|,56.373674952640926
+exp3 head stats (500 test reviews),8 heads trained | head 5,mean max weight,0.1228846943154931
+exp3 head stats (500 test reviews),8 heads trained | head 5,entropy / log L,0.8224185521000941
+exp3 head stats (500 test reviews),8 heads trained | head 5,self,0.007741247600784695
+exp3 head stats (500 test reviews),8 heads trained | head 5,kề bên |i−j|=1,0.014837667197920382
+exp3 head stats (500 test reviews),8 heads trained | head 5,mean |i−j|,55.279460909830256
+exp3 head stats (500 test reviews),8 heads trained | head 6,mean max weight,0.31095985393226144
+exp3 head stats (500 test reviews),8 heads trained | head 6,entropy / log L,0.6129020579172404
+exp3 head stats (500 test reviews),8 heads trained | head 6,self,0.008992286342376496
+exp3 head stats (500 test reviews),8 heads trained | head 6,kề bên |i−j|=1,0.014712049844674766
+exp3 head stats (500 test reviews),8 heads trained | head 6,mean |i−j|,58.1128997099445
+exp3 head stats (500 test reviews),8 heads trained | head 7,mean max weight,0.243319990709424
+exp3 head stats (500 test reviews),8 heads trained | head 7,entropy / log L,0.7006004571744169
+exp3 head stats (500 test reviews),8 heads trained | head 7,self,0.01018805638452379
+exp3 head stats (500 test reviews),8 heads trained | head 7,kề bên |i−j|=1,0.014354195770807564
+exp3 head stats (500 test reviews),8 heads trained | head 7,mean |i−j|,55.35300254928762
+exp3 head stats (500 test reviews),8 heads trained | head 8,mean max weight,0.14221992161870003
+exp3 head stats (500 test reviews),8 heads trained | head 8,entropy / log L,0.8061954048515217
+exp3 head stats (500 test reviews),8 heads trained | head 8,self,0.0070589531500462235
+exp3 head stats (500 test reviews),8 heads trained | head 8,kề bên |i−j|=1,0.014425392552278937
+exp3 head stats (500 test reviews),8 heads trained | head 8,mean |i−j|,55.568827130190805
+exp3 head distance (TV),"4 head, đã train",TV trung bình giữa các cặp head,0.6340613225400448
+exp3 head distance (TV),"4 head, đã train",TV nhỏ nhất (cặp giống nhau nhất),0.6052054819464684
+exp3 head distance (TV),"4 head, đã train",TV lớn nhất,0.6600904768705368
+exp3 head distance (TV),"4 head, khởi tạo",TV trung bình giữa các cặp head,0.24814114628732206
+exp3 head distance (TV),"4 head, khởi tạo",TV nhỏ nhất (cặp giống nhau nhất),0.23780698773264886
+exp3 head distance (TV),"4 head, khởi tạo",TV lớn nhất,0.2646816966533661
+exp3 head distance (TV),"8 head, đã train",TV trung bình giữa các cặp head,0.677598221410598
+exp3 head distance (TV),"8 head, đã train",TV nhỏ nhất (cặp giống nhau nhất),0.5892939308285713
+exp3 head distance (TV),"8 head, đã train",TV lớn nhất,0.7866308171153068
+order sensitivity (trained),LSTM,max |ΔP| when reordering,0.3996174
+order sensitivity (trained),"Transformer (mean, PE)",max |ΔP| when reordering,0.11475724
+order sensitivity (trained),Transformer không PE,max |ΔP| when reordering,8.940697e-08
+exp5 sequence length (Transformer),max_len=32,Tokens retained,0.14001117041930056
+exp5 sequence length (Transformer),max_len=32,% review không bị cắt,0.00336
+exp5 sequence length (Transformer),max_len=32,T²,1024.0
+exp5 sequence length (Transformer),max_len=32,"Attention memory (MB, 64×4×T², 1 lớp)",1.0
+exp5 sequence length (Transformer),max_len=32,Peak GPU mem train (MB),280.080078125
+exp5 sequence length (Transformer),max_len=32,Training time (s),14.857692003250122
+exp5 sequence length (Transformer),max_len=32,Accuracy,0.69888
+exp5 sequence length (Transformer),max_len=32,F1,0.7038319301282555
+exp5 sequence length (Transformer),max_len=64,Tokens retained,0.2768249878321593
+exp5 sequence length (Transformer),max_len=64,% review không bị cắt,0.05484
+exp5 sequence length (Transformer),max_len=64,T²,4096.0
+exp5 sequence length (Transformer),max_len=64,"Attention memory (MB, 64×4×T², 1 lớp)",4.0
+exp5 sequence length (Transformer),max_len=64,Peak GPU mem train (MB),332.15478515625
+exp5 sequence length (Transformer),max_len=64,Training time (s),19.727747440338135
+exp5 sequence length (Transformer),max_len=64,Accuracy,0.75284
+exp5 sequence length (Transformer),max_len=64,F1,0.7764390896921017
+exp5 sequence length (Transformer),max_len=128,Tokens retained,0.5207145775723271
+exp5 sequence length (Transformer),max_len=128,% review không bị cắt,0.26692
+exp5 sequence length (Transformer),max_len=128,T²,16384.0
+exp5 sequence length (Transformer),max_len=128,"Attention memory (MB, 64×4×T², 1 lớp)",16.0
+exp5 sequence length (Transformer),max_len=128,Peak GPU mem train (MB),484.3046875
+exp5 sequence length (Transformer),max_len=128,Training time (s),24.521844625473022
+exp5 sequence length (Transformer),max_len=128,Accuracy,0.805
+exp5 sequence length (Transformer),max_len=128,F1,0.7962212097145007
+exp5 sequence length (Transformer),max_len=256,Tokens retained,0.7754180018890584
+exp5 sequence length (Transformer),max_len=256,% review không bị cắt,0.7208
+exp5 sequence length (Transformer),max_len=256,T²,65536.0
+exp5 sequence length (Transformer),max_len=256,"Attention memory (MB, 64×4×T², 1 lớp)",64.0
+exp5 sequence length (Transformer),max_len=256,Peak GPU mem train (MB),980.6044921875
+exp5 sequence length (Transformer),max_len=256,Training time (s),54.054277658462524
+exp5 sequence length (Transformer),max_len=256,Accuracy,0.8456
+exp5 sequence length (Transformer),max_len=256,F1,0.8466062629152757
+"cost vs T (1 train step, B=64)",LSTM T=32,ms,9.529460000021572
+"cost vs T (1 train step, B=64)",LSTM T=32,peak MB,242.75830078125
+"cost vs T (1 train step, B=64)",Transformer T=32,ms,8.197999999993044
+"cost vs T (1 train step, B=64)",Transformer T=32,peak MB,244.349609375
+"cost vs T (1 train step, B=64)",LSTM T=64,ms,12.392599999975573
+"cost vs T (1 train step, B=64)",LSTM T=64,peak MB,252.73046875
+"cost vs T (1 train step, B=64)",Transformer T=64,ms,8.477179999999862
+"cost vs T (1 train step, B=64)",Transformer T=64,peak MB,263.6005859375
+"cost vs T (1 train step, B=64)",LSTM T=128,ms,17.664139999988038
+"cost vs T (1 train step, B=64)",LSTM T=128,peak MB,278.76171875
+"cost vs T (1 train step, B=64)",Transformer T=128,ms,11.179399999991801
+"cost vs T (1 train step, B=64)",Transformer T=128,peak MB,326.1669921875
+"cost vs T (1 train step, B=64)",LSTM T=256,ms,29.096079999999347
+"cost vs T (1 train step, B=64)",LSTM T=256,peak MB,330.82421875
+"cost vs T (1 train step, B=64)",Transformer T=256,ms,26.652160000003278
+"cost vs T (1 train step, B=64)",Transformer T=256,peak MB,515.3642578125
+"cost vs T (1 train step, B=64)",LSTM T=512,ms,56.411640000033
+"cost vs T (1 train step, B=64)",LSTM T=512,peak MB,402.94921875
+"cost vs T (1 train step, B=64)",Transformer T=512,ms,79.83210000002146
+"cost vs T (1 train step, B=64)",Transformer T=512,peak MB,1323.5048828125
+"cost vs T (1 train step, B=64)",LSTM T=1024,ms,97.82107999999425
+"cost vs T (1 train step, B=64)",LSTM T=1024,peak MB,579.10546875
+"cost vs T (1 train step, B=64)",Transformer T=1024,ms,1122.8743000000122
+"cost vs T (1 train step, B=64)",Transformer T=1024,peak MB,4475.7861328125
+"cost vs T (1 train step, B=64)",LSTM T=2048,ms,217.51823999998123
+"cost vs T (1 train step, B=64)",LSTM T=2048,peak MB,931.60546875
+"cost vs T (1 train step, B=64)",Transformer T=2048,ms,
+"cost vs T (1 train step, B=64)",Transformer T=2048,peak MB,
+application,I really enjoyed this movie.,"P(pos) Transformer (mean, PE)",0.9979305267333984
+application,I really enjoyed this movie.,P(pos) Transformer không PE,0.9980024695396423
+application,I really enjoyed this movie.,P(pos) LSTM,0.9351993203163147
+application,Great film.,"P(pos) Transformer (mean, PE)",0.9983558058738708
+application,Great film.,P(pos) Transformer không PE,0.9983263611793518
+application,Great film.,P(pos) LSTM,0.9080726504325867
+application,"I went in with low expectations because the trailer looked cheap, but the story kept surprising me, the two leads had real chemistry, the soundtrack fit every scene, and by the final act I was completely invested; it is one of the best films I have seen this year.","P(pos) Transformer (mean, PE)",0.9177494645118713
+application,"I went in with low expectations because the trailer looked cheap, but the story kept surprising me, the two leads had real chemistry, the soundtrack fit every scene, and by the final act I was completely invested; it is one of the best films I have seen this year.",P(pos) Transformer không PE,0.8580832481384277
+application,"I went in with low expectations because the trailer looked cheap, but the story kept surprising me, the two leads had real chemistry, the soundtrack fit every scene, and by the final act I was completely invested; it is one of the best films I have seen this year.",P(pos) LSTM,0.9900464415550232
+application,This movie is not good.,"P(pos) Transformer (mean, PE)",0.3828010857105255
+application,This movie is not good.,P(pos) Transformer không PE,0.9036660194396973
+application,This movie is not good.,P(pos) LSTM,0.6662452220916748
+application,This movie is not bad at all.,"P(pos) Transformer (mean, PE)",0.005417616106569767
+application,This movie is not bad at all.,P(pos) Transformer không PE,0.0020339670591056347
+application,This movie is not bad at all.,P(pos) LSTM,0.15908914804458618
+application,"The acting was terrible, but the story was wonderful and I loved it.","P(pos) Transformer (mean, PE)",0.28968432545661926
+application,"The acting was terrible, but the story was wonderful and I loved it.",P(pos) Transformer không PE,0.9463210701942444
+application,"The acting was terrible, but the story was wonderful and I loved it.",P(pos) LSTM,0.8413174748420715
+application,The visuals were stunning but the plot was a boring mess.,"P(pos) Transformer (mean, PE)",0.010414828546345234
+application,The visuals were stunning but the plot was a boring mess.,P(pos) Transformer không PE,0.005233427044004202
+application,The visuals were stunning but the plot was a boring mess.,P(pos) LSTM,0.07252266258001328
+application,"Well, it was a movie. Some parts worked, some did not.","P(pos) Transformer (mean, PE)",0.9698464274406433
+application,"Well, it was a movie. Some parts worked, some did not.",P(pos) Transformer không PE,0.8120062947273254
+application,"Well, it was a movie. Some parts worked, some did not.",P(pos) LSTM,0.7291519045829773
+application,I am not sure whether I liked it or not.,"P(pos) Transformer (mean, PE)",0.6553254723548889
+application,I am not sure whether I liked it or not.,P(pos) Transformer không PE,0.7624945044517517
+application,I am not sure whether I liked it or not.,P(pos) LSTM,0.7107786536216736
+error analysis,length 0–100,accuracy,0.8558330698703762
+error analysis,length 100–200,accuracy,0.8587344786528321
+error analysis,length 200–400,accuracy,0.8160952517572801
+error analysis,length >400,accuracy,0.7564350064350064
+attention vs occlusion (300 test reviews),"Transformer (mean, PE)","Spearman ρ(attention nhận được, |ΔP|)",0.4590843135791384
+attention vs occlusion (300 test reviews),"Transformer (mean, PE)",|ΔP| bỏ 5 token attention cao nhất,0.23284273619841164
+attention vs occlusion (300 test reviews),"Transformer (mean, PE)",|ΔP| bỏ 5 token ngẫu nhiên,0.02249641377090787
+attention vs occlusion (300 test reviews),"Transformer (mean, PE)",|ΔP| bỏ 5 token attention thấp nhất,0.008745982362112652
+attention vs occlusion (300 test reviews),"Transformer (mean, PE)",% đổi nhãn (top / ngẫu nhiên),0.280 / 0.027
+attention vs occlusion (300 test reviews),"Transformer (mean, PE)",% token attention cao nhất = token ảnh hưởng nhất,0.43666666666666665
+attention vs occlusion (300 test reviews),"Transformer (mean, PE)",số review,300
