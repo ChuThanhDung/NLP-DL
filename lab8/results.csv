@@ -1,0 +1,286 @@
+experiment,setting,metric,value
+data,T=64,fraction truncated,0.9787682577925011
+data,T=128,fraction truncated,0.8781308035938362
+data,T=256,fraction truncated,0.41198614666465894
+data,T=512,fraction truncated,0.0
+runs,scratch seed=42 frac=1.0 T=256,accuracy,0.83156
+runs,scratch seed=42 frac=1.0 T=256,precision,0.825851088922085
+runs,scratch seed=42 frac=1.0 T=256,recall,0.84032
+runs,scratch seed=42 frac=1.0 T=256,f1,0.8330227209643523
+runs,scratch seed=42 frac=1.0 T=256,train_time,33.73483157157898
+runs,scratch seed=42 frac=1.0 T=256,peak_mem_mb,219.11328125
+runs,scratch seed=42 frac=1.0 T=256,params,4039554.0
+runs,scratch seed=42 frac=1.0 T=256,best_epoch,3.0
+runs,scratch seed=42 frac=1.0 T=256,skipped_steps,0.0
+runs,scratch seed=43 frac=1.0 T=256,accuracy,0.83916
+runs,scratch seed=43 frac=1.0 T=256,precision,0.8633753321333676
+runs,scratch seed=43 frac=1.0 T=256,recall,0.80584
+runs,scratch seed=43 frac=1.0 T=256,f1,0.8336160880539579
+runs,scratch seed=43 frac=1.0 T=256,train_time,32.77182626724243
+runs,scratch seed=43 frac=1.0 T=256,peak_mem_mb,155.11328125
+runs,scratch seed=43 frac=1.0 T=256,params,4039554.0
+runs,scratch seed=43 frac=1.0 T=256,best_epoch,3.0
+runs,scratch seed=43 frac=1.0 T=256,skipped_steps,0.0
+runs,scratch seed=44 frac=1.0 T=256,accuracy,0.8344
+runs,scratch seed=44 frac=1.0 T=256,precision,0.8167146537354144
+runs,scratch seed=44 frac=1.0 T=256,recall,0.86232
+runs,scratch seed=44 frac=1.0 T=256,f1,0.8388979687135185
+runs,scratch seed=44 frac=1.0 T=256,train_time,32.7304904460907
+runs,scratch seed=44 frac=1.0 T=256,peak_mem_mb,155.11328125
+runs,scratch seed=44 frac=1.0 T=256,params,4039554.0
+runs,scratch seed=44 frac=1.0 T=256,best_epoch,3.0
+runs,scratch seed=44 frac=1.0 T=256,skipped_steps,0.0
+runs,pretrained seed=42 frac=1.0 T=256,accuracy,0.91044
+runs,pretrained seed=42 frac=1.0 T=256,precision,0.9191242545543665
+runs,pretrained seed=42 frac=1.0 T=256,recall,0.90008
+runs,pretrained seed=42 frac=1.0 T=256,f1,0.9095024453336567
+runs,pretrained seed=42 frac=1.0 T=256,train_time,483.95849537849426
+runs,pretrained seed=42 frac=1.0 T=256,peak_mem_mb,1950.73779296875
+runs,pretrained seed=42 frac=1.0 T=256,params,66364418.0
+runs,pretrained seed=42 frac=1.0 T=256,best_epoch,1.0
+runs,pretrained seed=42 frac=1.0 T=256,skipped_steps,0.0
+runs,pretrained seed=43 frac=1.0 T=256,accuracy,0.9092
+runs,pretrained seed=43 frac=1.0 T=256,precision,0.8935826408125577
+runs,pretrained seed=43 frac=1.0 T=256,recall,0.92904
+runs,pretrained seed=43 frac=1.0 T=256,f1,0.9109664261060558
+runs,pretrained seed=43 frac=1.0 T=256,train_time,485.2549364566803
+runs,pretrained seed=43 frac=1.0 T=256,peak_mem_mb,1964.23779296875
+runs,pretrained seed=43 frac=1.0 T=256,params,66364418.0
+runs,pretrained seed=43 frac=1.0 T=256,best_epoch,1.0
+runs,pretrained seed=43 frac=1.0 T=256,skipped_steps,1.0
+runs,pretrained seed=44 frac=1.0 T=256,accuracy,0.91368
+runs,pretrained seed=44 frac=1.0 T=256,precision,0.9128213316302092
+runs,pretrained seed=44 frac=1.0 T=256,recall,0.91472
+runs,pretrained seed=44 frac=1.0 T=256,f1,0.9137696795332854
+runs,pretrained seed=44 frac=1.0 T=256,train_time,484.0719611644745
+runs,pretrained seed=44 frac=1.0 T=256,peak_mem_mb,1953.73779296875
+runs,pretrained seed=44 frac=1.0 T=256,params,66364418.0
+runs,pretrained seed=44 frac=1.0 T=256,best_epoch,2.0
+runs,pretrained seed=44 frac=1.0 T=256,skipped_steps,0.0
+Exp1,scratch,accuracy mean,0.8350399999999999
+Exp1,scratch,accuracy std,0.0038402083276822584
+Exp1,scratch,f1 mean,0.8351789259106095
+Exp1,scratch,f1 std,0.0032344212238294523
+Exp1,scratch,train_time mean,33.079
+Exp1,pretrained,accuracy mean,0.9111066666666666
+Exp1,pretrained,accuracy std,0.0023132084500393437
+Exp1,pretrained,f1 mean,0.9114128503243326
+Exp1,pretrained,f1 std,0.00216836179306366
+Exp1,pretrained,train_time mean,484.4285
+Exp2,frozen (cls),accuracy,0.8526
+Exp2,frozen (cls),precision,0.8671386922115785
+Exp2,frozen (cls),recall,0.8328
+Exp2,frozen (cls),f1,0.8496225260150989
+Exp2,frozen (cls),train_time,290.0590102672577
+Exp2,frozen (mean),accuracy,0.85864
+Exp2,frozen (mean),precision,0.873023797636878
+Exp2,frozen (mean),recall,0.83936
+Exp2,frozen (mean),f1,0.8558610000815727
+Exp2,frozen (mean),train_time,288.60739517211914
+runs,scratch seed=42 frac=0.1 T=256,accuracy,0.71148
+runs,scratch seed=42 frac=0.1 T=256,precision,0.7173037402383888
+runs,scratch seed=42 frac=0.1 T=256,recall,0.69808
+runs,scratch seed=42 frac=0.1 T=256,f1,0.7075613217109264
+runs,scratch seed=42 frac=0.1 T=256,train_time,3.639697313308716
+runs,scratch seed=42 frac=0.1 T=256,peak_mem_mb,155.86328125
+runs,scratch seed=42 frac=0.1 T=256,params,4039554.0
+runs,scratch seed=42 frac=0.1 T=256,best_epoch,5.0
+runs,scratch seed=42 frac=0.1 T=256,skipped_steps,0.0
+runs,pretrained seed=42 frac=0.1 T=256,accuracy,0.87632
+runs,pretrained seed=42 frac=0.1 T=256,precision,0.8695788812067882
+runs,pretrained seed=42 frac=0.1 T=256,recall,0.88544
+runs,pretrained seed=42 frac=0.1 T=256,f1,0.8774377675598541
+runs,pretrained seed=42 frac=0.1 T=256,train_time,49.158315658569336
+runs,pretrained seed=42 frac=0.1 T=256,peak_mem_mb,1954.23779296875
+runs,pretrained seed=42 frac=0.1 T=256,params,66364418.0
+runs,pretrained seed=42 frac=0.1 T=256,best_epoch,1.0
+runs,pretrained seed=42 frac=0.1 T=256,skipped_steps,0.0
+runs,scratch seed=42 frac=0.25 T=256,accuracy,0.77844
+runs,scratch seed=42 frac=0.25 T=256,precision,0.8174190606475148
+runs,scratch seed=42 frac=0.25 T=256,recall,0.71704
+runs,scratch seed=42 frac=0.25 T=256,f1,0.7639463030044747
+runs,scratch seed=42 frac=0.25 T=256,train_time,8.908743143081665
+runs,scratch seed=42 frac=0.25 T=256,peak_mem_mb,155.86328125
+runs,scratch seed=42 frac=0.25 T=256,params,4039554.0
+runs,scratch seed=42 frac=0.25 T=256,best_epoch,4.0
+runs,scratch seed=42 frac=0.25 T=256,skipped_steps,0.0
+runs,pretrained seed=42 frac=0.25 T=256,accuracy,0.89416
+runs,pretrained seed=42 frac=0.25 T=256,precision,0.8828282828282829
+runs,pretrained seed=42 frac=0.25 T=256,recall,0.90896
+runs,pretrained seed=42 frac=0.25 T=256,f1,0.8957035869136776
+runs,pretrained seed=42 frac=0.25 T=256,train_time,121.58931756019592
+runs,pretrained seed=42 frac=0.25 T=256,peak_mem_mb,1953.73779296875
+runs,pretrained seed=42 frac=0.25 T=256,params,66364418.0
+runs,pretrained seed=42 frac=0.25 T=256,best_epoch,1.0
+runs,pretrained seed=42 frac=0.25 T=256,skipped_steps,0.0
+runs,scratch seed=42 frac=0.5 T=256,accuracy,0.81336
+runs,scratch seed=42 frac=0.5 T=256,precision,0.8015396458814472
+runs,scratch seed=42 frac=0.5 T=256,recall,0.83296
+runs,scratch seed=42 frac=0.5 T=256,f1,0.816947822675559
+runs,scratch seed=42 frac=0.5 T=256,train_time,17.911212921142578
+runs,scratch seed=42 frac=0.5 T=256,peak_mem_mb,156.056640625
+runs,scratch seed=42 frac=0.5 T=256,params,4039554.0
+runs,scratch seed=42 frac=0.5 T=256,best_epoch,3.0
+runs,scratch seed=42 frac=0.5 T=256,skipped_steps,0.0
+runs,pretrained seed=42 frac=0.5 T=256,accuracy,0.89732
+runs,pretrained seed=42 frac=0.5 T=256,precision,0.8699441340782123
+runs,pretrained seed=42 frac=0.5 T=256,recall,0.93432
+runs,pretrained seed=42 frac=0.5 T=256,f1,0.9009836065573771
+runs,pretrained seed=42 frac=0.5 T=256,train_time,242.5616364479065
+runs,pretrained seed=42 frac=0.5 T=256,peak_mem_mb,1952.48779296875
+runs,pretrained seed=42 frac=0.5 T=256,params,66364418.0
+runs,pretrained seed=42 frac=0.5 T=256,best_epoch,1.0
+runs,pretrained seed=42 frac=0.5 T=256,skipped_steps,0.0
+Exp3,frozen (cls) frac=0.1,accuracy,0.8367
+Exp3,frozen (cls) frac=0.1,f1,0.8334
+Exp3,frozen (cls) frac=0.25,accuracy,0.8449
+Exp3,frozen (cls) frac=0.25,f1,0.8403
+Exp3,frozen (cls) frac=0.5,accuracy,0.8502
+Exp3,frozen (cls) frac=0.5,f1,0.8483
+Exp3,frozen (cls) frac=1.0,accuracy,0.8526
+Exp3,frozen (cls) frac=1.0,f1,0.8496
+Exp3,frozen (mean) frac=0.1,accuracy,0.8374
+Exp3,frozen (mean) frac=0.1,f1,0.8339
+Exp3,frozen (mean) frac=0.25,accuracy,0.8486
+Exp3,frozen (mean) frac=0.25,f1,0.8458
+Exp3,frozen (mean) frac=0.5,accuracy,0.8542
+Exp3,frozen (mean) frac=0.5,f1,0.8527
+Exp3,frozen (mean) frac=1.0,accuracy,0.8586
+Exp3,frozen (mean) frac=1.0,f1,0.8559
+Exp3,pretrained frac=0.1,accuracy,0.8763
+Exp3,pretrained frac=0.1,f1,0.8774
+Exp3,pretrained frac=0.25,accuracy,0.8942
+Exp3,pretrained frac=0.25,f1,0.8957
+Exp3,pretrained frac=0.5,accuracy,0.8973
+Exp3,pretrained frac=0.5,f1,0.901
+Exp3,pretrained frac=1.0,accuracy,0.9111
+Exp3,pretrained frac=1.0,f1,0.9114
+Exp3,scratch frac=0.1,accuracy,0.7115
+Exp3,scratch frac=0.1,f1,0.7076
+Exp3,scratch frac=0.25,accuracy,0.7784
+Exp3,scratch frac=0.25,f1,0.7639
+Exp3,scratch frac=0.5,accuracy,0.8134
+Exp3,scratch frac=0.5,f1,0.8169
+Exp3,scratch frac=1.0,accuracy,0.835
+Exp3,scratch frac=1.0,f1,0.8352
+runs,pretrained seed=42 frac=1.0 T=64,accuracy,0.82184
+runs,pretrained seed=42 frac=1.0 T=64,precision,0.8262244566980214
+runs,pretrained seed=42 frac=1.0 T=64,recall,0.81512
+runs,pretrained seed=42 frac=1.0 T=64,f1,0.8206346649484536
+runs,pretrained seed=42 frac=1.0 T=64,train_time,196.38907170295715
+runs,pretrained seed=42 frac=1.0 T=64,peak_mem_mb,1344.97998046875
+runs,pretrained seed=42 frac=1.0 T=64,params,66364418.0
+runs,pretrained seed=42 frac=1.0 T=64,best_epoch,1.0
+runs,pretrained seed=42 frac=1.0 T=64,skipped_steps,21.0
+runs,pretrained seed=42 frac=1.0 T=128,accuracy,0.87488
+runs,pretrained seed=42 frac=1.0 T=128,precision,0.8814097346573335
+runs,pretrained seed=42 frac=1.0 T=128,recall,0.86632
+runs,pretrained seed=42 frac=1.0 T=128,f1,0.8737997256515775
+runs,pretrained seed=42 frac=1.0 T=128,train_time,281.9496338367462
+runs,pretrained seed=42 frac=1.0 T=128,peak_mem_mb,1547.69091796875
+runs,pretrained seed=42 frac=1.0 T=128,params,66364418.0
+runs,pretrained seed=42 frac=1.0 T=128,best_epoch,1.0
+runs,pretrained seed=42 frac=1.0 T=128,skipped_steps,63.0
+Exp4,T=64,accuracy,0.8218
+Exp4,T=64,f1,0.8206
+Exp4,T=64,train time (s),196.3891
+Exp4,T=64,test time (s),18.6463
+Exp4,T=64,peak GPU mem (MB),1344.98
+Exp4,T=64,% review bị cắt,0.9788
+Exp4,T=128,accuracy,0.8749
+Exp4,T=128,f1,0.8738
+Exp4,T=128,train time (s),281.9496
+Exp4,T=128,test time (s),34.6844
+Exp4,T=128,peak GPU mem (MB),1547.6909
+Exp4,T=128,% review bị cắt,0.8781
+Exp4,T=256,accuracy,0.9104
+Exp4,T=256,f1,0.9095
+Exp4,T=256,train time (s),483.9585
+Exp4,T=256,test time (s),232.4283
+Exp4,T=256,peak GPU mem (MB),1950.7378
+Exp4,T=256,% review bị cắt,0.412
+Exp5,frozen (cls) | IMDb (in-domain),accuracy,0.8526
+Exp5,frozen (cls) | IMDb (in-domain),precision,0.8671
+Exp5,frozen (cls) | IMDb (in-domain),recall,0.8328
+Exp5,frozen (cls) | IMDb (in-domain),f1,0.8496
+Exp5,frozen (cls) | IMDb (in-domain),mean confidence,0.848800003528595
+Exp5,frozen (cls) | amazon,accuracy,0.8735
+Exp5,frozen (cls) | amazon,precision,0.8514
+Exp5,frozen (cls) | amazon,recall,0.905
+Exp5,frozen (cls) | amazon,f1,0.8774
+Exp5,frozen (cls) | amazon,mean confidence,0.8787000179290771
+Exp5,frozen (cls) | yelp,accuracy,0.875
+Exp5,frozen (cls) | yelp,precision,0.8447
+Exp5,frozen (cls) | yelp,recall,0.919
+Exp5,frozen (cls) | yelp,f1,0.8803
+Exp5,frozen (cls) | yelp,mean confidence,0.8697999715805054
+Exp5,frozen (mean) | IMDb (in-domain),accuracy,0.8586
+Exp5,frozen (mean) | IMDb (in-domain),precision,0.873
+Exp5,frozen (mean) | IMDb (in-domain),recall,0.8394
+Exp5,frozen (mean) | IMDb (in-domain),f1,0.8559
+Exp5,frozen (mean) | IMDb (in-domain),mean confidence,0.8495000004768372
+Exp5,frozen (mean) | amazon,accuracy,0.8595
+Exp5,frozen (mean) | amazon,precision,0.8207
+Exp5,frozen (mean) | amazon,recall,0.92
+Exp5,frozen (mean) | amazon,f1,0.8675
+Exp5,frozen (mean) | amazon,mean confidence,0.8754000067710876
+Exp5,frozen (mean) | yelp,accuracy,0.857
+Exp5,frozen (mean) | yelp,precision,0.8046
+Exp5,frozen (mean) | yelp,recall,0.943
+Exp5,frozen (mean) | yelp,f1,0.8683
+Exp5,frozen (mean) | yelp,mean confidence,0.86080002784729
+Exp5,pretrained | IMDb (in-domain),accuracy,0.9104
+Exp5,pretrained | IMDb (in-domain),precision,0.9191
+Exp5,pretrained | IMDb (in-domain),recall,0.9001
+Exp5,pretrained | IMDb (in-domain),f1,0.9095
+Exp5,pretrained | IMDb (in-domain),mean confidence,0.9246000051498413
+Exp5,pretrained | amazon,accuracy,0.9265
+Exp5,pretrained | amazon,precision,0.9169
+Exp5,pretrained | amazon,recall,0.938
+Exp5,pretrained | amazon,f1,0.9273
+Exp5,pretrained | amazon,mean confidence,0.9223999977111816
+Exp5,pretrained | yelp,accuracy,0.9235
+Exp5,pretrained | yelp,precision,0.9206
+Exp5,pretrained | yelp,recall,0.927
+Exp5,pretrained | yelp,f1,0.9238
+Exp5,pretrained | yelp,mean confidence,0.9021999835968018
+Exp5,scratch | IMDb (in-domain),accuracy,0.8316
+Exp5,scratch | IMDb (in-domain),precision,0.8259
+Exp5,scratch | IMDb (in-domain),recall,0.8403
+Exp5,scratch | IMDb (in-domain),f1,0.833
+Exp5,scratch | IMDb (in-domain),mean confidence,0.8736000061035156
+Exp5,scratch | amazon,accuracy,0.7845
+Exp5,scratch | amazon,precision,0.7565
+Exp5,scratch | amazon,recall,0.839
+Exp5,scratch | amazon,f1,0.7956
+Exp5,scratch | amazon,mean confidence,0.8797000050544739
+Exp5,scratch | yelp,accuracy,0.796
+Exp5,scratch | yelp,precision,0.7741
+Exp5,scratch | yelp,recall,0.836
+Exp5,scratch | yelp,f1,0.8038
+Exp5,scratch | yelp,mean confidence,0.86080002784729
+Application,pretrained seed=42,TN,11510.0
+Application,pretrained seed=42,FP,990.0
+Application,pretrained seed=42,FN,1249.0
+Application,pretrained seed=42,TP,11251.0
+Confidence,pretrained fine-tuned,ECE,0.014167566359043142
+Confidence,pretrained fine-tuned | Low (<0.75),accuracy,0.6138
+Confidence,pretrained fine-tuned | Low (<0.75),n,2605.0
+Confidence,pretrained fine-tuned | Medium (0.75–0.95),accuracy,0.8346
+Confidence,pretrained fine-tuned | Medium (0.75–0.95),n,5538.0
+Confidence,pretrained fine-tuned | High (≥0.95),accuracy,0.9812
+Confidence,pretrained fine-tuned | High (≥0.95),n,16857.0
+Confidence,scratch,ECE,0.04290027235031129
+Confidence,scratch | Low (<0.75),accuracy,0.5913
+Confidence,scratch | Low (<0.75),n,5131.0
+Confidence,scratch | Medium (0.75–0.95),accuracy,0.8011
+Confidence,scratch | Medium (0.75–0.95),n,8421.0
+Confidence,scratch | High (≥0.95),accuracy,0.9617
+Confidence,scratch | High (≥0.95),n,11448.0
+Confidence,frozen (cls),ECE,0.006847080123424521
+Confidence,frozen (cls) | Low (<0.75),accuracy,0.6324
+Confidence,frozen (cls) | Low (<0.75),n,6202.0
+Confidence,frozen (cls) | Medium (0.75–0.95),accuracy,0.8768
+Confidence,frozen (cls) | Medium (0.75–0.95),n,10038.0
+Confidence,frozen (cls) | High (≥0.95),accuracy,0.9808
+Confidence,frozen (cls) | High (≥0.95),n,8760.0
