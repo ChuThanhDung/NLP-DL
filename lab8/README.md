@@ -6,64 +6,64 @@ Pipeline: `raw text → WordPiece tokenizer → [CLS] … [SEP] + attention mask
 
 ## Cấu trúc thư mục
 
-| File | Nội dung |
-|---|---|
-| `report.pdf` | Bản tổng hợp: README, calculations, prediction, 2 notebook, error_analysis, reflection |
-| `calculations.md` | Bài 1: MLM loss (−ln 0.70, 0.95, 0.01). Bài 2: tokenize "The cats are playing." (token, ID, special token, attention mask, đếm word / token / subword) |
-| `prediction.md` | Prediction 1–3 (và dự đoán phụ cho Exp 4, 5), ghi trước khi chạy |
-| `tokenization.ipynb` | `tokens.keys()`, `input_ids` / `attention_mask`, padding trong batch, kiểm tra tác dụng của attention mask, subword (từ hiếm, tên riêng, lỗi chính tả, tiếng Việt, emoji), DistilBERT điền `[MASK]` và kiểm tra Bài 1 |
-| `pretrained_classification.py` | Dữ liệu (IMDb chia như LAB 05–07, Yelp / Amazon), `PretrainedClassifier` (encoder → [CLS] → Linear), `ScratchTransformer` (cấu hình LAB 07, cùng tokenizer), `train_model`, frozen mode (`extract_features` + `train_head`), `predict_proba`, `metrics` |
-| `fine_tuning.ipynb` | Exp 1–5, application, confidence analysis, error analysis (đã chạy, có output) |
-| `results.csv` | Mọi số liệu (dạng dài: experiment, setting, metric, value) |
-| `images/data_efficiency.png` | Accuracy / F1 theo 10–100% data: pretrained, frozen ([CLS], mean), scratch |
-| `images/confusion_matrix.png` | Confusion matrix của scratch, frozen, fine-tuned |
-| `images/confidence_analysis.png` | Reliability diagram (3 model), phân bố confidence của dự đoán đúng / sai |
-| `images/learning_curves.png` | Train / validation loss, validation accuracy của scratch và fine-tuned |
-| `images/sequence_length.png` | Accuracy, thời gian train, bộ nhớ GPU theo T = 64 / 128 / 256 |
-| `error_analysis.md` | Metrics, confusion matrix, câu tự viết, 4 FP + 4 FN + 4 lỗi tự tin nhất, phân loại lỗi, confidence analysis |
-| `reflection.md` | Đối chiếu prediction, trả lời câu hỏi từng experiment, Q1–Q6, learning check, reflection |
+| File                             | Nội dung                                                                                                                                                                                                                                                |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `report.pdf`                     | Bản tổng hợp: README, calculations, prediction, 2 notebook, error_analysis, reflection                                                                                                                                                                  |
+| `calculations.md`                | Bài 1: MLM loss (−ln 0.70, 0.95, 0.01). Bài 2: tokenize "The cats are playing." (token, ID, special token, attention mask, đếm word / token / subword)                                                                                                  |
+| `prediction.md`                  | Prediction 1–3 (và dự đoán phụ cho Exp 4, 5), ghi trước khi chạy                                                                                                                                                                                        |
+| `tokenization.ipynb`             | `tokens.keys()`, `input_ids` / `attention_mask`, padding trong batch, kiểm tra tác dụng của attention mask, subword (từ hiếm, tên riêng, lỗi chính tả, tiếng Việt, emoji), DistilBERT điền `[MASK]` và kiểm tra Bài 1                                   |
+| `pretrained_classification.py`   | Dữ liệu (IMDb chia như LAB 05–07, Yelp / Amazon), `PretrainedClassifier` (encoder → [CLS] → Linear), `ScratchTransformer` (cấu hình LAB 07, cùng tokenizer), `train_model`, frozen mode (`extract_features` + `train_head`), `predict_proba`, `metrics` |
+| `fine_tuning.ipynb`              | Exp 1–5, application, confidence analysis, error analysis (đã chạy, có output)                                                                                                                                                                          |
+| `results.csv`                    | Mọi số liệu (dạng dài: experiment, setting, metric, value)                                                                                                                                                                                              |
+| `images/data_efficiency.png`     | Accuracy / F1 theo 10–100% data: pretrained, frozen ([CLS], mean), scratch                                                                                                                                                                              |
+| `images/confusion_matrix.png`    | Confusion matrix của scratch, frozen, fine-tuned                                                                                                                                                                                                        |
+| `images/confidence_analysis.png` | Reliability diagram (3 model), phân bố confidence của dự đoán đúng / sai                                                                                                                                                                                |
+| `images/learning_curves.png`     | Train / validation loss, validation accuracy của scratch và fine-tuned                                                                                                                                                                                  |
+| `images/sequence_length.png`     | Accuracy, thời gian train, bộ nhớ GPU theo T = 64 / 128 / 256                                                                                                                                                                                           |
+| `error_analysis.md`              | Metrics, confusion matrix, câu tự viết, 4 FP + 4 FN + 4 lỗi tự tin nhất, phân loại lỗi, confidence analysis                                                                                                                                             |
+| `reflection.md`                  | Đối chiếu prediction, trả lời câu hỏi từng experiment, Q1–Q6, learning check, reflection                                                                                                                                                                |
 
 ## Reproducibility
 
-| | |
-|---|---|
-| Model | `distilbert-base-uncased` (66.4 triệu tham số) + head Linear(768, 2). Baseline: Transformer from scratch (cấu hình LAB 07: d_model 128, 4 head, d_ff 256, 1 layer, mean pooling; 4.0 triệu tham số) |
-| Tokenizer | `distilbert-base-uncased` (WordPiece, vocab 30 522, chữ thường), dùng cho cả hai model |
-| Dataset | IMDb (`stanfordnlp/imdb`); domain shift: 2 000 mẫu cân bằng nhãn từ test của `fancyzhx/yelp_polarity` và `fancyzhx/amazon_polarity` |
-| Train / validation / test split | 19 923 / 4 981 (bỏ review trùng, chia stratified 80/20, seed 42) / 25 000. Giống LAB 05–07 |
-| Max sequence length | 256 (Exp 4: 64 / 128 / 256) |
-| Batch size | 16 (pretrained), 64 (scratch) |
-| Learning rate | 2e-5 (pretrained), 1e-3 (scratch); warmup 6% rồi giảm tuyến tính; head của frozen: Adam 1e-3 |
-| Epochs | 2 (pretrained), 6 (scratch), 30 (head của frozen); chọn epoch có validation loss thấp nhất |
-| Optimizer | AdamW, weight decay 0.01, clip gradient 1.0, bf16 autocast |
-| Random seed | 42, 43, 44 cho Exp 1; 42 cho các thí nghiệm còn lại; subset 10/25/50% lồng nhau (seed 42) |
-| Hardware | NVIDIA RTX 3050 Laptop (4 GB), PyTorch 2.6.0 + CUDA 12.4, transformers 5.17.0 |
-| Training time | Fine-tuning 484 s / 2 epoch (T = 256); scratch 33 s / 6 epoch; frozen 290 s (chủ yếu để trích feature). Cả notebook: 114 phút |
+|                                 |                                                                                                                                                                                                     |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Model                           | `distilbert-base-uncased` (66.4 triệu tham số) + head Linear(768, 2). Baseline: Transformer from scratch (cấu hình LAB 07: d_model 128, 4 head, d_ff 256, 1 layer, mean pooling; 4.0 triệu tham số) |
+| Tokenizer                       | `distilbert-base-uncased` (WordPiece, vocab 30 522, chữ thường), dùng cho cả hai model                                                                                                              |
+| Dataset                         | IMDb (`stanfordnlp/imdb`); domain shift: 2 000 mẫu cân bằng nhãn từ test của `fancyzhx/yelp_polarity` và `fancyzhx/amazon_polarity`                                                                 |
+| Train / validation / test split | 19 923 / 4 981 (bỏ review trùng, chia stratified 80/20, seed 42) / 25 000. Giống LAB 05–07                                                                                                          |
+| Max sequence length             | 256 (Exp 4: 64 / 128 / 256)                                                                                                                                                                         |
+| Batch size                      | 16 (pretrained), 64 (scratch)                                                                                                                                                                       |
+| Learning rate                   | 2e-5 (pretrained), 1e-3 (scratch); warmup 6% rồi giảm tuyến tính; head của frozen: Adam 1e-3                                                                                                        |
+| Epochs                          | 2 (pretrained), 6 (scratch), 30 (head của frozen); chọn epoch có validation loss thấp nhất                                                                                                          |
+| Optimizer                       | AdamW, weight decay 0.01, clip gradient 1.0, bf16 autocast                                                                                                                                          |
+| Random seed                     | 42, 43, 44 cho Exp 1; 42 cho các thí nghiệm còn lại; subset 10/25/50% lồng nhau (seed 42)                                                                                                           |
+| Hardware                        | NVIDIA RTX 3050 Laptop (4 GB), PyTorch 2.6.0 + CUDA 12.4, transformers 5.17.0                                                                                                                       |
+| Training time                   | Fine-tuning 484 s / 2 epoch (T = 256); scratch 33 s / 6 epoch; frozen 290 s (chủ yếu để trích feature). Cả notebook: 114 phút                                                                       |
 
 ## Kết quả chính
 
-| Model (IMDb test) | Params train được | Train time | Accuracy | Precision | Recall | F1 |
-|---|---|---|---|---|---|---|
-| Transformer from scratch (3 seed) | 4 039 554 | 33 s | 0.835 ± 0.004 | 0.835 | 0.836 | 0.835 ± 0.003 |
-| Frozen DistilBERT, [CLS] | 1 538 | 290 s | 0.853 | 0.867 | 0.833 | 0.850 |
-| Frozen DistilBERT, mean | 1 538 | 289 s | 0.859 | 0.873 | 0.839 | 0.856 |
-| **DistilBERT fine-tuned (3 seed)** | 66 364 418 | 484 s | **0.911 ± 0.002** | 0.909 | 0.915 | **0.911 ± 0.002** |
+| Model (IMDb test)                  | Params train được | Train time | Accuracy          | Precision | Recall | F1                |
+| ---------------------------------- | ----------------- | ---------- | ----------------- | --------- | ------ | ----------------- |
+| Transformer from scratch (3 seed)  | 4 039 554         | 33 s       | 0.835 ± 0.004     | 0.835     | 0.836  | 0.835 ± 0.003     |
+| Frozen DistilBERT, [CLS]           | 1 538             | 290 s      | 0.853             | 0.867     | 0.833  | 0.850             |
+| Frozen DistilBERT, mean            | 1 538             | 289 s      | 0.859             | 0.873     | 0.839  | 0.856             |
+| **DistilBERT fine-tuned (3 seed)** | 66 364 418        | 484 s      | **0.911 ± 0.002** | 0.909     | 0.915  | **0.911 ± 0.002** |
 
-| Training data | 10% | 25% | 50% | 100% |
-|---|---|---|---|---|
-| Fine-tuned | 0.876 | 0.894 | 0.897 | 0.911 |
+| Training data | 10%   | 25%   | 50%   | 100%  |
+| ------------- | ----- | ----- | ----- | ----- |
+| Fine-tuned    | 0.876 | 0.894 | 0.897 | 0.911 |
 | Frozen (mean) | 0.837 | 0.849 | 0.854 | 0.859 |
-| Scratch | 0.712 | 0.778 | 0.813 | 0.835 |
+| Scratch       | 0.712 | 0.778 | 0.813 | 0.835 |
 
-| Max length | 64 | 128 | 256 |
-|---|---|---|---|
-| Accuracy | 0.822 | 0.875 | 0.910 |
+| Max length                   | 64               | 128              | 256              |
+| ---------------------------- | ---------------- | ---------------- | ---------------- |
+| Accuracy                     | 0.822            | 0.875            | 0.910            |
 | Train time / peak GPU memory | 196 s / 1 345 MB | 282 s / 1 548 MB | 484 s / 1 951 MB |
 
-| Accuracy | IMDb | Amazon | Yelp |
-|---|---|---|---|
-| Scratch | 0.832 | 0.785 | 0.796 |
-| Fine-tuned | 0.910 | 0.927 | 0.924 |
+| Accuracy   | IMDb  | Amazon | Yelp  |
+| ---------- | ----- | ------ | ----- |
+| Scratch    | 0.832 | 0.785  | 0.796 |
+| Fine-tuned | 0.910 | 0.927  | 0.924 |
 
 Các phát hiện chính:
 
@@ -121,4 +121,4 @@ python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreproces
   - tokenization "The cats are playing." khớp output tokenizer;
   - attention mask đúng thì padding không làm đổi vector [CLS] (sai số 7e-6);
   - số liệu trong các file `.md` lấy từ output notebook.
-- **Student:** MLM calculation, prediction (ghi trước khi chạy), giải thích pretraining / fine-tuning, phân tích kết quả, error analysis, reflection, learning check.
+- **Student:** MLM calculation, prediction , giải thích pretraining / fine-tuning, phân tích kết quả, error analysis, reflection, learning check.

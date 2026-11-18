@@ -1,0 +1,142 @@
+experiment,setting,metric,value
+train,strategy A,train_time,331.3308262825012
+train,strategy A,skipped_steps,67.0
+train,strategy A,best_epoch,3.0
+train,strategy A epoch 1,val_entity_f1,0.9312311304931232
+train,strategy A epoch 2,val_entity_f1,0.9419257521159808
+train,strategy A epoch 3,val_entity_f1,0.9481096487551345
+train,strategy B,train_time,940.0945615768433
+train,strategy B,skipped_steps,43.0
+train,strategy B,best_epoch,3.0
+train,strategy B epoch 1,val_entity_f1,0.9380724308881607
+train,strategy B epoch 2,val_entity_f1,0.9433171222538991
+train,strategy B epoch 3,val_entity_f1,0.9483654652137469
+train,baseline,train_time,35.48368716239929
+Exp2,baseline | validation,entity P,0.8342941854719157
+Exp2,baseline | validation,entity R,0.8524065971053517
+Exp2,baseline | validation,entity F1,0.8432531424290352
+Exp2,baseline | validation,seqeval F1,0.8432531424290352
+Exp2,baseline | validation,token acc,0.9749230948950586
+Exp2,baseline | validation,token P (≠O),0.8973862536302033
+Exp2,baseline | validation,token R (≠O),0.8620248750435895
+Exp2,baseline | validation,token F1 (≠O),0.8793502104701488
+Exp2,baseline | validation,TP,5065.0
+Exp2,baseline | validation,FP,1006.0
+Exp2,baseline | validation,FN,877.0
+Exp2,baseline | test,entity P,0.7424421550413781
+Exp2,baseline | test,entity R,0.7783286118980169
+Exp2,baseline | test,entity F1,0.7599619673264759
+Exp2,baseline | test,seqeval F1,0.7599619673264759
+Exp2,baseline | test,token acc,0.9576612469042748
+Exp2,baseline | test,token P (≠O),0.8206188149818364
+Exp2,baseline | test,token R (≠O),0.807569033530572
+Exp2,baseline | test,token F1 (≠O),0.8140416278347313
+Exp2,baseline | test,TP,4396.0
+Exp2,baseline | test,FP,1525.0
+Exp2,baseline | test,FN,1252.0
+Exp2,BERT (A) | validation,entity P,0.9445465174544847
+Exp2,BERT (A) | validation,entity R,0.9516997643890945
+Exp2,BERT (A) | validation,entity F1,0.9481096487551345
+Exp2,BERT (A) | validation,seqeval F1,0.9481096487551345
+Exp2,BERT (A) | validation,token acc,0.9910244928157004
+Exp2,BERT (A) | validation,token P (≠O),0.957998836532868
+Exp2,BERT (A) | validation,token R (≠O),0.9571079855864233
+Exp2,BERT (A) | validation,token F1 (≠O),0.9575532038609141
+Exp2,BERT (A) | validation,TP,5655.0
+Exp2,BERT (A) | validation,FP,332.0
+Exp2,BERT (A) | validation,FN,287.0
+Exp2,BERT (A) | test,entity P,0.9052116124519063
+Exp2,BERT (A) | test,entity R,0.9164305949008499
+Exp2,BERT (A) | test,entity F1,0.9107865563962697
+Exp2,BERT (A) | test,seqeval F1,0.9107865563962697
+Exp2,BERT (A) | test,token acc,0.9825777969204263
+Exp2,BERT (A) | test,token P (≠O),0.9169705810843667
+Exp2,BERT (A) | test,token R (≠O),0.9298570019723866
+Exp2,BERT (A) | test,token F1 (≠O),0.9233688333945403
+Exp2,BERT (A) | test,TP,5176.0
+Exp2,BERT (A) | test,FP,542.0
+Exp2,BERT (A) | test,FN,472.0
+Exp2,BERT (B) | validation,entity P,0.9447227788911156
+Exp2,BERT (B) | validation,entity R,0.9520363513968361
+Exp2,BERT (B) | validation,entity F1,0.9483654652137469
+Exp2,BERT (B) | validation,seqeval F1,0.9483654652137469
+Exp2,BERT (B) | validation,token acc,0.9911023714029827
+Exp2,BERT (B) | validation,token P (≠O),0.9581687194980246
+Exp2,BERT (B) | validation,token R (≠O),0.9585028478437754
+Exp2,BERT (B) | validation,token F1 (≠O),0.9583357545470393
+Exp2,BERT (B) | validation,TP,5657.0
+Exp2,BERT (B) | validation,FP,331.0
+Exp2,BERT (B) | validation,FN,285.0
+Exp2,BERT (B) | test,entity P,0.9071266771214497
+Exp2,BERT (B) | test,entity R,0.921742209631728
+Exp2,BERT (B) | test,entity F1,0.9143760428558882
+Exp2,BERT (B) | test,seqeval F1,0.9143760428558882
+Exp2,BERT (B) | test,token acc,0.9827070097986432
+Exp2,BERT (B) | test,token P (≠O),0.9176570458404074
+Exp2,BERT (B) | test,token R (≠O),0.9328155818540433
+Exp2,BERT (B) | test,token F1 (≠O),0.9251742266780779
+Exp2,BERT (B) | test,TP,5206.0
+Exp2,BERT (B) | test,FP,533.0
+Exp2,BERT (B) | test,FN,442.0
+Exp3,baseline,missed entities with ≥1 correct token,0.2531948881789137
+Exp3,BERT (A),missed entities with ≥1 correct token,0.18008474576271186
+Exp5,baseline | len 1,f1,0.736828377673448
+Exp5,baseline | len 1,support,3574.0
+Exp5,baseline | len 2,f1,0.835093896713615
+Exp5,baseline | len 2,support,1776.0
+Exp5,baseline | len 3,f1,0.63
+Exp5,baseline | len 3,support,236.0
+Exp5,baseline | len 4+,f1,0.4731182795698926
+Exp5,baseline | len 4+,support,62.0
+Exp5,BERT (A) | len 1,f1,0.9080300083356487
+Exp5,BERT (A) | len 1,support,3574.0
+Exp5,BERT (A) | len 2,f1,0.9241573033707866
+Exp5,BERT (A) | len 2,support,1776.0
+Exp5,BERT (A) | len 3,f1,0.869198312236287
+Exp5,BERT (A) | len 3,support,236.0
+Exp5,BERT (A) | len 4+,f1,0.8507462686567164
+Exp5,BERT (A) | len 4+,support,62.0
+Exp5,BERT (B) | len 1,f1,0.9091917371412727
+Exp5,BERT (B) | len 1,support,3574.0
+Exp5,BERT (B) | len 2,f1,0.9302325581395348
+Exp5,BERT (B) | len 2,support,1776.0
+Exp5,BERT (B) | len 3,f1,0.8860759493670887
+Exp5,BERT (B) | len 3,support,236.0
+Exp5,BERT (B) | len 4+,f1,0.8702290076335878
+Exp5,BERT (B) | len 4+,support,62.0
+Rare,baseline | seen,f1,0.9137175598247388
+Rare,baseline | seen,recall,0.9149510631117111
+Rare,baseline | unseen,f1,0.5980479148181012
+Rare,baseline | unseen,recall,0.62756052141527
+Rare,baseline | có word bị tách,f1,0.7424191936021326
+Rare,baseline | có word bị tách,recall,0.7355562892043579
+Rare,baseline | không bị tách,f1,0.7788755164361416
+Rare,baseline | không bị tách,recall,0.8277968690339824
+Rare,BERT (A) | seen,f1,0.9620724686759227
+Rare,BERT (A) | seen,recall,0.9588255146810665
+Rare,BERT (A) | unseen,f1,0.8553113553113554
+Rare,BERT (A) | unseen,recall,0.8696461824953445
+Rare,BERT (A) | có word bị tách,f1,0.9029936201537707
+Rare,BERT (A) | có word bị tách,recall,0.9111918124793661
+Rare,BERT (A) | không bị tách,f1,0.9198553207690844
+Rare,BERT (A) | không bị tách,recall,0.9224894998090875
+Rare,BERT (B) | seen,f1,0.9635778417753684
+Rare,BERT (B) | seen,recall,0.9598380020249747
+Rare,BERT (B) | unseen,f1,0.8614150255288111
+Rare,BERT (B) | unseen,recall,0.8797020484171322
+Rare,BERT (B) | có word bị tách,f1,0.9044045676998369
+Rare,BERT (B) | có word bị tách,recall,0.9151535160118851
+Rare,BERT (B) | không bị tách,f1,0.926003424006087
+Rare,BERT (B) | không bị tách,recall,0.9293623520427644
+Errors,missing,BERT (A),69.0
+Errors,missing,baseline,341.0
+Errors,spurious,BERT (A),127.0
+Errors,spurious,baseline,306.0
+Errors,type + boundary,BERT (A),103.0
+Errors,type + boundary,baseline,342.0
+Errors,wrong boundary,BERT (A),114.0
+Errors,wrong boundary,baseline,409.0
+Errors,wrong type,BERT (A),224.0
+Errors,wrong type,baseline,479.0
+Context,ambiguous forms,BERT accuracy,0.8610354223433242
+Context,ambiguous forms,baseline accuracy,0.6539509536784741

@@ -8,8 +8,8 @@ Repo này chứa bài làm các lab của môn **Xử lý ngôn ngữ tự nhiê
 Mỗi lab đi theo cùng một chu trình: **tính tay → dự đoán → thí nghiệm → cài đặt → ứng dụng → đánh giá → phân tích lỗi → reflection**. Các lab nối tiếp nhau, đi từ biểu diễn thưa dựa trên đếm từ tới mô hình tuần tự và attention:
 
 ```
-TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN / LSTM / GRU  →  Attention  →  Transformer
- Lab 1       Lab 2          Lab 3                Lab 4                   Lab 5             Lab 6         Lab 7
+TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN / LSTM / GRU  →  Attention  →  Transformer  →  Pretrained (BERT)  →  NER
+ Lab 1       Lab 2          Lab 3                Lab 4                   Lab 5             Lab 6         Lab 7              Lab 8             Lab 9
 ```
 
 ## Các lab
@@ -23,6 +23,8 @@ TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN 
 | [Lab 5](lab5/) | Sequence models: RNN, LSTM, GRU | IMDb | GRU 0.832, LSTM 0.816, RNN 0.741 (baseline TF-IDF 0.888); gradient tới token đầu của RNN gần như bằng 0 |
 | [Lab 6](lab6/) | Attention: scaled dot-product, self-attention (NumPy), attention classifier | text8, IMDb | Self-attention classifier 0.835 so với LSTM 0.826, train nhanh hơn 3.4 lần; không nhạy thứ tự từ; chi phí O(T²); attention chỉ khớp một phần với token quyết định (ρ = 0.36) |
 | [Lab 7](lab7/) | Transformer: multi-head attention, positional encoding, FFN, residual + LayerNorm; Transformer block tự ghép | IMDb | Transformer 0.835 so với LSTM 0.825 (3 seed), nhanh hơn 1.45 lần; không PE thì không phân biệt thứ tự; số head không đổi accuracy; chi phí O(T²) (T ≥ 512 chậm hơn LSTM) |
+| [Lab 8](lab8/) | Pretrained Transformer: tokenizer (subword, special token, attention mask), MLM, DistilBERT fine-tuning so với frozen và from scratch | IMDb, Yelp, Amazon | Fine-tuned 0.911 so với from scratch 0.835 và frozen 0.859; 10% data đã đạt 0.876; T 64 → 256: 0.822 → 0.910; không giảm trên Yelp / Amazon |
+| [Lab 9](lab9/) | Token classification: BIO tagging, label alignment word ↔ subword (IGNORE), entity-level P / R / F1, Information Extraction | CoNLL-2003 | BERT 0.911 so với baseline Logistic Regression 0.760 (entity F1); entity chưa gặp 0.855 so với đã gặp 0.962; IE 0.941 trên 30 câu tự gán nhãn |
 
 ## Cấu trúc mỗi thư mục lab
 

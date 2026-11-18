@@ -1,5 +1,23 @@
-# File đề bài
+# File de bai
 W*.pdf
 
-# Script ghép report (chỉ dùng trên máy)
+# Script ghep report (chi dung tren may)
 build_report.py
+
+# DeepSeek Harness (dsh) - chi dung local
+.dsh-home/
+dsh-web.ps1
+dsh-web.bat
+dsh-shortcut.ps1
+*.lnk
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model / checkpoint (nang, tao lai bang notebook)
+lab9/ckpt/
+lab9/model_ner/
+
+# Ghi chu ca nhan (khong nop)
+lab*/notes/
