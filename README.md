@@ -8,8 +8,8 @@ Repo này chứa bài làm các lab của môn **Xử lý ngôn ngữ tự nhiê
 Mỗi lab đi theo cùng một chu trình: **tính tay → dự đoán → thí nghiệm → cài đặt → ứng dụng → đánh giá → phân tích lỗi → reflection**. Các lab nối tiếp nhau, đi từ biểu diễn thưa dựa trên đếm từ tới mô hình tuần tự và attention:
 
 ```
-TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN / LSTM / GRU  →  Attention  →  Transformer  →  Pretrained (BERT)  →  NER
- Lab 1       Lab 2          Lab 3                Lab 4                   Lab 5             Lab 6         Lab 7              Lab 8             Lab 9
+TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN / LSTM / GRU  →  Attention  →  Transformer  →  Pretrained (BERT)  →  NER  →  QA
+ Lab 1       Lab 2          Lab 3                Lab 4                   Lab 5             Lab 6         Lab 7              Lab 8             Lab 9   Lab 10
 ```
 
 ## Các lab
@@ -25,6 +25,7 @@ TF-IDF  →  N-gram LM  →  Word Embedding  →  Text Classification  →  RNN 
 | [Lab 7](lab7/) | Transformer: multi-head attention, positional encoding, FFN, residual + LayerNorm; Transformer block tự ghép | IMDb | Transformer 0.835 so với LSTM 0.825 (3 seed), nhanh hơn 1.45 lần; không PE thì không phân biệt thứ tự; số head không đổi accuracy; chi phí O(T²) (T ≥ 512 chậm hơn LSTM) |
 | [Lab 8](lab8/) | Pretrained Transformer: tokenizer (subword, special token, attention mask), MLM, DistilBERT fine-tuning so với frozen và from scratch | IMDb, Yelp, Amazon | Fine-tuned 0.911 so với from scratch 0.835 và frozen 0.859; 10% data đã đạt 0.876; T 64 → 256: 0.822 → 0.910; không giảm trên Yelp / Amazon |
 | [Lab 9](lab9/) | Token classification: BIO tagging, label alignment word ↔ subword (IGNORE), entity-level P / R / F1, Information Extraction | CoNLL-2003 | BERT 0.911 so với baseline Logistic Regression 0.760 (entity F1); entity chưa gặp 0.855 so với đã gặp 0.962; IE 0.941 trên 30 câu tự gán nhãn |
+| [Lab 10](lab10/) | Extractive QA: (question, context) → (start, end), offset mapping, sliding window, Exact Match / F1, distractor | SQuAD v1.1 | DistilBERT 71.1 EM / 80.5 F1 so với baseline keyword overlap 15.4 / 28.3; max_length 128 → 384 chỉ +1.1 F1; một câu distractor làm F1 rơi còn 22.4 |
 
 ## Cấu trúc mỗi thư mục lab
 

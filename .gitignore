@@ -21,3 +21,5 @@ lab9/model_ner/
 
 # Ghi chu ca nhan (khong nop)
 lab*/notes/
+lab10/ckpt*/
+lab10/model_qa/

@@ -1,0 +1,148 @@
+experiment,setting,metric,value
+baseline,validation,em,13.45
+baseline,validation,f1,26.871432126204994
+baseline,test,em,15.421002838221382
+baseline,test,f1,28.270708530324885
+baseline,test,correct sentence,0.7789971617786188
+Exp1,T=128,em,70.4635761589404
+Exp1,T=128,f1,79.41678543935129
+Exp1,T=128,train_time,1131.6405355930328
+Exp1,T=128,test_loss,0.9923171555261059
+Exp1,T=128,best_epoch,2.0
+Exp1,T=128,skipped,504.0
+Exp1,T=128,n_train_features,72988.0
+Exp1,T=128,no_answer_windows,0.42724831479147257
+Exp2 curve,T=128 epoch=0.25,train_loss,2.3552970830043387
+Exp2 curve,T=128 epoch=0.25,val_loss,1.3646915009638925
+Exp2 curve,T=128 epoch=0.50,train_loss,1.33866632521992
+Exp2 curve,T=128 epoch=0.50,val_loss,1.0721082070212704
+Exp2 curve,T=128 epoch=0.75,train_loss,1.1419275704963665
+Exp2 curve,T=128 epoch=0.75,val_loss,1.0163268278717448
+Exp2 curve,T=128 epoch=1.00,train_loss,1.043461124317826
+Exp2 curve,T=128 epoch=1.00,val_loss,0.9116981401200989
+Exp2 curve,T=128 epoch=1.25,train_loss,0.7979528584400597
+Exp2 curve,T=128 epoch=1.25,val_loss,0.9288793012667517
+Exp2 curve,T=128 epoch=1.50,train_loss,0.7661317233482424
+Exp2 curve,T=128 epoch=1.50,val_loss,0.9173815643951365
+Exp2 curve,T=128 epoch=1.75,train_loss,0.7274858294618786
+Exp2 curve,T=128 epoch=1.75,val_loss,0.9121331425198121
+Exp2 curve,T=128 epoch=2.00,train_loss,0.7169787636519241
+Exp2 curve,T=128 epoch=2.00,val_loss,0.8923266376242532
+Exp1,T=256,em,70.7663197729423
+Exp1,T=256,f1,80.1729859633445
+Exp1,T=256,train_time,842.8429999351501
+Exp1,T=256,test_loss,1.2732891030101487
+Exp1,T=256,best_epoch,2.0
+Exp1,T=256,skipped,10.0
+Exp1,T=256,n_train_features,33362.0
+Exp1,T=256,no_answer_windows,0.06998980876446256
+Exp2 curve,T=256 epoch=0.25,train_loss,3.6487525153618594
+Exp2 curve,T=256 epoch=0.25,val_loss,2.0210768404110806
+Exp2 curve,T=256 epoch=0.50,train_loss,1.9263673558573806
+Exp2 curve,T=256 epoch=0.50,val_loss,1.407376542498109
+Exp2 curve,T=256 epoch=0.75,train_loss,1.5683443296414155
+Exp2 curve,T=256 epoch=0.75,val_loss,1.2880844922766712
+Exp2 curve,T=256 epoch=1.00,train_loss,1.4574127952639873
+Exp2 curve,T=256 epoch=1.00,val_loss,1.2635353511561067
+Exp2 curve,T=256 epoch=1.25,train_loss,1.1067165143759314
+Exp2 curve,T=256 epoch=1.25,val_loss,1.184789198063679
+Exp2 curve,T=256 epoch=1.50,train_loss,1.0762139500445917
+Exp2 curve,T=256 epoch=1.50,val_loss,1.1611721346901895
+Exp2 curve,T=256 epoch=1.75,train_loss,1.0585642334124026
+Exp2 curve,T=256 epoch=1.75,val_loss,1.1574095511393192
+Exp2 curve,T=256 epoch=2.00,train_loss,1.0319996929811834
+Exp2 curve,T=256 epoch=2.00,val_loss,1.1384120662502282
+Exp1,T=384,em,71.06906338694418
+Exp1,T=384,f1,80.49198589118056
+Exp1,T=384,train_time,950.1355192661285
+Exp1,T=384,test_loss,1.3066361808281624
+Exp1,T=384,best_epoch,2.0
+Exp1,T=384,skipped,7.0
+Exp1,T=384,n_train_features,30319.0
+Exp1,T=384,no_answer_windows,0.008509515485339226
+Exp2 curve,T=384 epoch=0.25,train_loss,3.7265566867199307
+Exp2 curve,T=384 epoch=0.25,val_loss,1.9411740713006087
+Exp2 curve,T=384 epoch=0.50,train_loss,1.8909118536670328
+Exp2 curve,T=384 epoch=0.50,val_loss,1.4277559589701672
+Exp2 curve,T=384 epoch=0.75,train_loss,1.6131871101462234
+Exp2 curve,T=384 epoch=0.75,val_loss,1.3205308030452672
+Exp2 curve,T=384 epoch=1.00,train_loss,1.4905182902823018
+Exp2 curve,T=384 epoch=1.00,val_loss,1.2541699883250226
+Exp2 curve,T=384 epoch=1.25,train_loss,1.1395164844343217
+Exp2 curve,T=384 epoch=1.25,val_loss,1.2294173794175518
+Exp2 curve,T=384 epoch=1.50,train_loss,1.1120779921108157
+Exp2 curve,T=384 epoch=1.50,val_loss,1.1982550668291105
+Exp2 curve,T=384 epoch=1.75,train_loss,1.0861993642488443
+Exp2 curve,T=384 epoch=1.75,val_loss,1.168024485009631
+Exp2 curve,T=384 epoch=2.00,train_loss,1.0623060386730299
+Exp2 curve,T=384 epoch=2.00,val_loss,1.1653625282234668
+Exp3,Baseline (keyword overlap),EM,15.421002838221382
+Exp3,Baseline (keyword overlap),F1,28.270708530324978
+Exp3,Baseline (keyword overlap),% EM = 0 nhưng F1 > 0,24.11542100283822
+Exp3,Baseline (keyword overlap),% F1 = 0,60.4635761589404
+Exp3,DistilBERT fine-tuned (T = 384),EM,71.06906338694418
+Exp3,DistilBERT fine-tuned (T = 384),F1,80.49198589118033
+Exp3,DistilBERT fine-tuned (T = 384),% EM = 0 nhưng F1 > 0,17.37937559129612
+Exp3,DistilBERT fine-tuned (T = 384),% F1 = 0,11.551561021759698
+Exp4,thấp (< 0.4),n,3172.0
+Exp4,thấp (< 0.4),base_EM,6.809583858764187
+Exp4,thấp (< 0.4),base_F1,15.332159529639686
+Exp4,thấp (< 0.4),bert_EM,62.83102143757881
+Exp4,thấp (< 0.4),bert_F1,72.46268982043264
+Exp4,trung bình,n,3911.0
+Exp4,trung bình,base_EM,15.90386090513935
+Exp4,trung bình,base_F1,29.63980707811463
+Exp4,trung bình,bert_EM,72.02761442086423
+Exp4,trung bình,bert_F1,81.46113236263892
+Exp4,cao (≥ 0.7),n,3487.0
+Exp4,cao (≥ 0.7),base_EM,22.71293375394322
+Exp4,cao (≥ 0.7),base_F1,38.504873431319645
+Exp4,cao (≥ 0.7),bert_EM,77.48781187266992
+Exp4,cao (≥ 0.7),bert_F1,86.70896188387809
+Exp5,1,n,3429.0
+Exp5,1,base_EM,20.209973753280842
+Exp5,1,base_F1,29.863697657246487
+Exp5,1,bert_EM,75.7946923301254
+Exp5,1,bert_F1,81.80380776777328
+Exp5,2–3,n,4575.0
+Exp5,2–3,base_EM,15.890710382513662
+Exp5,2–3,base_F1,29.825421994605676
+Exp5,2–3,bert_EM,74.55737704918033
+Exp5,2–3,bert_F1,82.59929109210535
+Exp5,4–6,n,1648.0
+Exp5,4–6,base_EM,10.558252427184465
+Exp5,4–6,base_F1,25.42456907021611
+Exp5,4–6,bert_EM,67.1116504854369
+Exp5,4–6,bert_F1,80.0887861043848
+Exp5,7+,n,918.0
+Exp5,7+,base_EM,3.9215686274509802
+Exp5,7+,base_F1,19.681671509585712
+Exp5,7+,bert_EM,43.13725490196079
+Exp5,7+,bert_F1,65.81367950726941
+Perturbation,gốc,window / câu hỏi,1.016
+Perturbation,gốc,DistilBERT EM,73.1
+Perturbation,gốc,DistilBERT F1,80.60321555332672
+Perturbation,gốc,baseline EM,15.1
+Perturbation,gốc,baseline F1,27.787245275065658
+Perturbation,+ không liên quan,window / câu hỏi,1.048
+Perturbation,+ không liên quan,DistilBERT EM,71.1
+Perturbation,+ không liên quan,DistilBERT F1,79.11483587878888
+Perturbation,+ không liên quan,baseline EM,15.0
+Perturbation,+ không liên quan,baseline F1,27.562396790217168
+Perturbation,+ distractor,window / câu hỏi,1.021
+Perturbation,+ distractor,DistilBERT EM,18.7
+Perturbation,+ distractor,DistilBERT F1,22.399117346705584
+Perturbation,+ distractor,baseline EM,2.7
+Perturbation,+ distractor,baseline F1,4.292871193134349
+Perturbation,+ distractor,% chọn đáp án giả,70.5
+Perturbation,+ distractor,% baseline chọn đáp án giả,69.1
+Perturbation,đổi thứ tự,window / câu hỏi,1.016
+Perturbation,đổi thứ tự,DistilBERT EM,71.2
+Perturbation,đổi thứ tự,DistilBERT F1,79.09383294815487
+Perturbation,đổi thứ tự,baseline EM,15.0
+Perturbation,đổi thứ tự,baseline F1,28.13397732321074
+Errors,correct,count,7400.0
+Errors,wrong span,count,1603.0
+Errors,wrong start,count,759.0
+Errors,wrong end,count,669.0
+Errors,wrong boundary,count,139.0
